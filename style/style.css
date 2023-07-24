@@ -1,0 +1,138 @@
+/* Styling for navigation bar */
+.navbar {
+  background-color: #d1d1d1 !important;
+  text-align: center;
+  z-index: 99;
+}
+
+@media (min-width: 992px) {
+  .navbar{
+    background-color: #d1d1d1 !important;
+    text-align: left !important;
+    z-index: 99;
+  }
+}
+
+/* Styling for footer */
+footer {
+  background-color: #d1d1d1 !important;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+
+#footer {
+  display: none;
+}
+
+#content-wrapper {
+  min-height: calc(100vh); /* Adjust the value (100px) based on your footer's height and any additional spacing */
+  padding-bottom: 100px;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dark-theme {
+  background-color: #222;
+  color: #fff;
+}
+/* input card fix */
+.custom-card {
+  width: 500px;
+}
+
+.custom-input {
+  width: 100%;
+  max-width: 400px;
+}
+
+.custom-button {
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  transition: background-color 0.3s;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+/* */
+
+.pagination {
+  margin-top: 1rem;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #d1d1d1;
+  color: #000000;
+  border-color: #d1d1d1;
+}
+
+.dark-theme .card {
+  background-color: #343a40;
+  color: #fff;
+  border-color: #343a40;
+}
+
+.achievement {
+  width: 18rem;
+}
+
+.player-achievement {
+  margin-top: 20px;
+}
+
+#footer {
+  text-align: center;
+}
+
+
+.social-media-buttons {
+  margin-bottom: 10px;
+}
+
+.social-media-button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  line-height: 50px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.social-media-button:hover {
+  background-color: #0056b3;
+}
+
+.stat-card{
+  width: 250px !important;
+  height: 500px !important;
+  margin: 20px !important;
+}
+
