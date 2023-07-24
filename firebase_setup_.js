@@ -134,47 +134,22 @@ function UpdateSubsribeStatus(val) {
 
 }
 
-function getAllPlayers() {
-  return new Promise((resolve, reject) => {
-    if(my_super_list.length != 0){
-      resolve(my_super_list.slice())
-    }
-    else{
-      const db = getFirestore(fire_app);
-      const usersCollection = collection(db, "players");
-      getDocs(usersCollection)
-        .then((querySnapshot) => {
-          querySnapshot.forEach((doc) => {
-            my_super_list.push({ id: doc.id, ...doc.data() });
-          })
-          resolve(my_super_list.slice())
-        })
-        .catch((error) => {
-          console.log("Error getting documents: ", error);
-          reject(error)
-        });
-    }
-  });
-}
-
-function commitToUser(data) {
+function fireAuthOut(){
   if(auth.currentUser == null){
     return
   }
-  const uid = auth.currentUser.uid
-  const route = 'users/' + uid
-  const db = getDatabase();
-  // TODO:VALIDATE data  before commit
-  // https://firebase.google.com/docs/reference/security/database#newdata
-  set(ref(db, route), data)
+  auth.signOut()
   .then(() => {
-    console.log("Data successfully committed to /users/" + uid);
+    // Log out successful
+    console.log("User logged out successfully.");
   })
   .catch((error) => {
-    console.error("Error committing data: ", error);
+    // An error occurred while logging out
+    console.error("Error logging out: ", error);
   });
 }
 
+// db starts here
 function initList() {
   return new Promise((resolve, reject) => {
     if (auth.currentUser == null) {
@@ -201,6 +176,11 @@ function initList() {
       get(child(dbRef, "users/"+uid)).then((snapshot) => {
         if (snapshot.exists()) {
           my_secret_list = snapshot.val();
+          for(let i = 0; i < 11; i++){
+            if(my_secret_list[i].includes("******************")){
+              my_secret_list[i] = null
+            }
+          }
         } else {
           // ignore
         }
@@ -218,7 +198,12 @@ function secret_list_getter(){
 }
 
 function secret_list_adder(playerId){
+  // check if there's space availabe
   if(my_secret_list.filter((obj) => {return obj != null}).length >= 10){
+    return false
+  }
+  playerId = String(playerId)
+  if(playerId.length != 20){
     return false
   }
   if(my_secret_list.length >=7){
@@ -231,7 +216,8 @@ function secret_list_adder(playerId){
       }
     }
   }
-  localStorage.setItem("roster", my_secret_list.join("\n"))
+  commitToLS()
+  commitToUser()
   return true
 }
 
@@ -239,7 +225,8 @@ function secrect_list_dropper(playerId){
   const index = my_secret_list.indexOf(playerId)
   if(index >= 7){
     my_secret_list.splice(index,1)
-    localStorage.setItem("roster", my_secret_list.join("\n"))
+    commitToLS()
+    commitToUser()
     return true
   }
   else{
@@ -252,7 +239,8 @@ function secret_list_sendBack(playerId){
   if(index <= 6){
     my_secret_list[index] = null
     my_secret_list.push(playerId)
-    localStorage.setItem("roster", my_secret_list.join("\n"))
+    commitToLS()
+    commitToUser()
     return true
   }else{
     return false
@@ -264,12 +252,84 @@ function secret_list_start(index,playerId){
   if(index <= 6 && pindex >=0 && my_secret_list[index] == null){
     my_secret_list[index] = playerId
     my_secret_list.splice(pindex,1)
-    localStorage.setItem("roster", my_secret_list.join("\n"))
+    commitToLS()
+    commitToUser()
     return true
   }
   else{
     return false
   }
+}
+
+function commitToLS() {
+  if(auth.currentUser != null){
+    return
+  }
+  localStorage.setItem("roster", my_secret_list.join("\n"))
+}
+
+function commitToUser() {
+  if(auth.currentUser == null){
+    return
+  }
+  const uid = auth.currentUser.uid
+  const route = 'users/' + uid
+  const db = getDatabase();
+  // TODO:VALIDATE data  before commit
+  // https://firebase.google.com/docs/reference/security/database#newdata
+
+  let data = my_secret_list.slice()
+  
+  for(let i = 0;i<11;i++){
+    if(!data[i]){
+      data[i] = null
+    }
+  }
+
+  let index = data.indexOf(null);
+
+  while (index !== -1) {
+    if(index < 10){
+      data[index] = "******************0" + index
+    }
+    else{
+      data[index] = "******************" + index
+    }
+    index = data.indexOf(null);
+
+  }
+  console.log({...data})
+  set(ref(db, route), {...data})
+  .then(() => {
+    console.log("Data successfully committed to /users/" + uid);
+  })
+  .catch((error) => {
+    console.error("Error committing data: ", error);
+  });
+}
+
+// firestore starts here
+function getAllPlayers() {
+  return new Promise((resolve, reject) => {
+    if(my_super_list.length != 0){
+      resolve(my_super_list.slice())
+    }
+    else{
+      const db = getFirestore(fire_app);
+      const usersCollection = collection(db, "players");
+      getDocs(usersCollection)
+        .then((querySnapshot) => {
+          querySnapshot.forEach((doc) => {
+            my_super_list.push({ id: doc.id, ...doc.data() });
+          })
+          resolve(my_super_list.slice())
+        })
+        .catch((error) => {
+          console.log("Error getting documents: ", error);
+          reject(error)
+        });
+    }
+  });
 }
 
 function getPlayerById(id) {
@@ -282,20 +342,7 @@ function getPlayerById(id) {
   return result || {}
 }
 
-function fireAuthOut(){
-  if(auth.currentUser == null){
-    return
-  }
-  auth.signOut()
-  .then(() => {
-    // Log out successful
-    console.log("User logged out successfully.");
-  })
-  .catch((error) => {
-    // An error occurred while logging out
-    console.error("Error logging out: ", error);
-  });
-}
+
 
 
 window.handlePhoneNumberAuth = handlePhoneNumberAuth;
@@ -307,7 +354,6 @@ window.hasFireUser = hasFireUser;
 window.newUser = newUser;
 window.UpdateSubsribeStatus = UpdateSubsribeStatus;
 window.getAllPlayers = getAllPlayers;
-window.commitToUser = commitToUser
 
 window.secret_list_getter = secret_list_getter
 window.secret_list_adder = secret_list_adder
