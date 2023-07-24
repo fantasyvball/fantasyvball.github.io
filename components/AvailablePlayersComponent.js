@@ -2,6 +2,10 @@ import PlayerCard from './PlayerCardComponent.js';
 
 export default {
   template: `
+    <div v-if="noAddError" class="alert alert-danger mt-3" role="alert">
+      Player is not added because roster is full. (max:10 players)
+      <button type="button" class="btn-close position-absolute end-0" @click="noAddError = false"></button>
+    </div>
     <div v-if="isLoading">
       <div class="loading-container" style="justify-content: center; align-items: center;">
         <div class="spinner-border text-primary" role="status">
@@ -102,10 +106,10 @@ export default {
       totalPages: 0,
       unsortedPlayers: [],
       ownedPlayers: [],
+      noAddError: false,
     };
   },
   mounted() {
-    console.log("on mounted event." + (new Date().getTime() / 1000))
     this.loadDataFromDB();
   },
   computed: {
@@ -113,7 +117,6 @@ export default {
       return window.user != null;
     },
     filteredList() {
-      console.log("bad event." + (new Date().getTime() / 1000))
       let list = this.unsortedPlayers.slice();
 
       // Apply filter by owned players
@@ -147,7 +150,6 @@ export default {
       const endIndex = startIndex + this.perPage;
       
       list = list.slice(startIndex, endIndex);
-      console.log(list)
       return list;
       
     },
@@ -188,7 +190,6 @@ export default {
       this.ownedPlayers = window.secret_list_getter();
       window.getAllPlayers()
         .then((querySnapshot) => {
-          console.log("processing event." + (new Date().getTime() / 1000))
           this.unsortedPlayers =  querySnapshot;
         })
         .catch((error) => {
@@ -198,7 +199,6 @@ export default {
           ]
         })
         .finally(() => {
-          console.log("finally event." + (new Date().getTime() / 1000))
           this.isLoading = false;
         })
     },
@@ -210,6 +210,7 @@ export default {
       if(status){
         this.ownedPlayers = window.secret_list_getter();
       }else{
+        this.noAddError = true;
         //pass
       }
       
