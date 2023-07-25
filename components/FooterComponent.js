@@ -2,9 +2,12 @@ export default{
   template:`
     <footer class="mt-4" id="footer">
       <div class="social-media-buttons">
-          <a href="https://www.instagram.com/fantasyvball" class="social-media-button"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.threads.net/@fantasyvball" class="social-media-button"><i class="fas fa-at"></i></a>
           <a href="https://www.instagram.com/fantasyvball" class="social-media-button"><i class="fab fa-instagram"></i></a>
+          
+          <a href="https://discord.gg/tczFfRMUUt" class="social-media-button"><i class="fab fa-discord"></i></a>
+
+          <a href="https://www.threads.net/@fantasyvball" class="social-media-button"><i class="fas fa-at"></i></a>
+          
           <a data-bs-toggle="modal" href="#bugReportModal" class="social-media-button"><i class="fas fa-bug"></i></a>
       </div>
       <div class="copy-right-text">
@@ -23,11 +26,11 @@ export default{
             <form>
               <div class="mb-3">
                 <label for="bugTitle" class="form-label">Bug Summary</label>
-                <input type="text" class="form-control" id="bugTitle" required>
+                <input type="text" class="form-control" id="bugTitle" required disabled>
               </div>
               <div class="mb-3">
                 <label for="bugDescription" class="form-label">Bug Description</label>
-                <textarea class="form-control" id="bugDescription" rows="4" required></textarea>
+                <textarea class="form-control" id="bugDescription" rows="4" placeholder="this form is not ready yet! if you encounter any bugs please contact: fantasyvball@outlook.com" required disabled></textarea>
               </div>
             </form>
           </div>
