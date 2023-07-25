@@ -1,0 +1,43 @@
+name: Pull Request
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Add your custom checks and validations here
+      # For example, you can run tests, linting, or any other checks
+      - name: Run tests
+        run: |
+          # Add your test command here
+          # Example: npm run test
+
+      - name: Run linting
+        run: |
+          # Add your linting command here
+          # Example: npm run lint
+
+      # If all checks pass, you can add the "success" message here
+      # Replace this with your desired success message
+      - name: Post Success Message
+        if: success()
+        run: echo "All checks passed. The pull request is ready for review."
+
+      # If any check fails, you can add the "failure" message here
+      # Replace this with your desired failure message
+      - name: Post Failure Message
+        if: failure()
+        run: echo "Some checks failed. Please review the changes and address the issues."
+
+      # Add any other custom steps or checks you need for the pull request
+
