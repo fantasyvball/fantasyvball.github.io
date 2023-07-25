@@ -1,4 +1,6 @@
 # Fantasy Volleyball
+[![pages-build-deployment](https://github.com/fantasyvball/fantasyvball.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/fantasyvball/fantasyvball.github.io/actions/workflows/pages/pages-build-deployment)
+[![CodeQL](https://github.com/fantasyvball/fantasyvball.github.io/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/fantasyvball/fantasyvball.github.io/actions/workflows/github-code-scanning/codeql)
 
 Fantasy Volleyball is a web application that allows users to build and manage their own fantasy volleyball teams. Users can select players, create lineups, and compete against other fantasy teams to earn points based on player performance in real volleyball matches.
 
