@@ -176,10 +176,13 @@ function initList() {
       get(child(dbRef, "users/"+uid)).then((snapshot) => {
         if (snapshot.exists()) {
           my_secret_list = snapshot.val();
-          for(let i = 0; i < 11; i++){
+          for(let i = 0; i < 7; i++){
             if(my_secret_list[i].includes("******************")){
               my_secret_list[i] = null
             }
+          }
+          while(my_secret_list[my_secret_list.length - 1].includes("******************")){
+            my_secret_list.splice(my_secret_list.length - 1,1)
           }
         } else {
           // ignore
