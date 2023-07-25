@@ -138,15 +138,13 @@ export default {
             <div class="row">
               <div class="col-md-12">
                 <h3>Bench</h3>
-                <div v-for="playerIndexPair in bench" :key="bench">
-                  <PlayerCard :player = playerIndexPair[0]>
-                    <div style="position:absolute; top:0;right:0">
-                      <button class="btn btn-primary" @click="sendToStart(playerIndexPair[1])">Start</button>
+                <div v-for="playerIndexPair in bench" :key="bench" class="mb-3">
+                  <PlayerCard :player="playerIndexPair[0]">
+                    <div style="position:absolute; top:0; right:0;">
+                      <button class="btn btn-primary me-2" @click="sendToStart(playerIndexPair[1])">Start</button>
                       <button class="btn btn-danger" @click="releasePlayer(playerIndexPair[1])">Release</button>
                     </div>
-                    </div>
                   </PlayerCard>
-                  <br>
                 </div>
               </div>
             </div>
