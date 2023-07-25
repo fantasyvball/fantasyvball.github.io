@@ -1,4 +1,4 @@
-**Thanks for contributing to [Project Name]!**
+**Thanks for contributing to Fantasy Volleyball!**
 **A PR well described will help maintainers to quickly review and merge it**
 
 Before submitting your PR, please check our [contributing](https://github.com/orgs/fantasyvball/blob/master/CONTRIBUTING.md) guidelines.
