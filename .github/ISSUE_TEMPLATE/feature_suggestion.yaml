@@ -1,0 +1,35 @@
+name: Feature Suggestion
+description: Suggest a new feature or enhancement
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature or enhancement!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Please describe the new feature or enhancement you'd like to suggest.
+      placeholder: Describe the feature or enhancement here...
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: How would this feature be useful to you or others? Please provide a use case.
+      placeholder: Describe the use case here...
+    validations:
+      required: true
