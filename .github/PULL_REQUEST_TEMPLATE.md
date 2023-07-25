@@ -1,7 +1,7 @@
 **Thanks for contributing to Fantasy Volleyball!**
 **A PR well described will help maintainers to quickly review and merge it**
 
-Before submitting your PR, please check our [contributing](https://github.com/orgs/fantasyvball/blob/master/CONTRIBUTING.md) guidelines.
+Before submitting your PR, please check our [contributing](https://github.com/fantasyvball/fantasyvball.github.io/blob/main/CONTRIBUTING.md) guidelines.
 Avoid large PRs, help reviewers by making them as simple and short as possible.
 
 <!--- Provide a general summary of your changes in the Title above -->
@@ -21,7 +21,7 @@ Avoid large PRs, help reviewers by making them as simple and short as possible.
 ### Checklist
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
-- [ ] I have read the [contributing](https://github.com/orgs/fantasyvball/blob/master/CONTRIBUTING.md) document.
+- [ ] I have read the [contributing](https://github.com/fantasyvball/fantasyvball.github.io/blob/main/CONTRIBUTING.md) document.
 - [ ] My change requires a change to the documentation.
 - [ ] I have updated the documentation accordingly.
 - [ ] I have added tests to cover my changes.
