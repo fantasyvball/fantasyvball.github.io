@@ -6,7 +6,7 @@ export default{
           
           <a href="https://discord.gg/tczFfRMUUt" class="social-media-button"><i class="fab fa-discord"></i></a>
 
-          <a href="https://www.threads.net/@fantasyvball" class="social-media-button"><i class="fas fa-at"></i></a>
+          <a href="https://github.com/fantasyvball/fantasyvball.github.io" class="social-media-button"><i class="fab fa-github"></i></a>
           
           <a data-bs-toggle="modal" href="#bugReportModal" class="social-media-button"><i class="fas fa-bug"></i></a>
       </div>
@@ -30,7 +30,7 @@ export default{
               </div>
               <div class="mb-3">
                 <label for="bugDescription" class="form-label">Bug Description</label>
-                <textarea class="form-control" id="bugDescription" rows="4" placeholder="this form is not ready yet! if you encounter any bugs please contact: fantasyvball@outlook.com" required disabled></textarea>
+                <textarea class="form-control" id="bugDescription" rows="4" placeholder="The current version of this form is still under development and not yet fully functional. If you come across any issues or errors, please don't hesitate to get in touch with us at fantasyvball@outlook.com or submit a bug report in our GitHub repository." required disabled></textarea>
               </div>
             </form>
           </div>
