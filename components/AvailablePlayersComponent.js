@@ -35,11 +35,11 @@ export default {
             <div class="mb-3">
               <label for="sortKey">Sort by:</label>
               <select id="sortKey" class="form-select" v-model="sortKey">
-                <option value="name">Name</option>
-                <option value="position">Position</option>
-                <option value="school">School</option>
-                <option value="year">School Level</option>
-                <option value="points">Points</option>
+                <option value="Name">Name</option>
+                <option value="Position">Position</option>
+                <option value="School">School</option>
+                <option value="Year">School Level</option>
+                <option value="Points">Points</option>
               </select>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default {
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div v-for="player in filteredList" :key="player.name">
+            <div v-for="player in filteredList" :key="player.Name">
               <PlayerCard :player="player"  :class="getPlayerCardClass(player)">
                 <div v-if="isLoggedIn" style="position:absolute; top:0;right:0">
                   <button v-if="!owned(player)" class="btn btn-primary" @click="addPlayer(player)">Add</button>
@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       isLoading: true,
-      sortKey: 'name',
+      sortKey: 'Name',
       showOwnedPlayers: false,
       perPage: 5,
       currentPage: 1,
@@ -126,9 +126,17 @@ export default {
 
       // Sort the list based on the selected key
       list.sort((a, b) => {
-        const yearOrder = ["Fr.", "R-Fr.", "So.", "R-So.", "Jr.", "R-Jr.", "Sr.", "R-Sr.", "Gr."];
-        const aSortValue = (this.sortKey == "year") ? yearOrder.indexOf(a.year.replace(/ /g,'')) : a[this.sortKey];
-        const bSortValue = (this.sortKey == "year") ? yearOrder.indexOf(b.year.replace(/ /g,'')) : b[this.sortKey];
+        const yearOrder = ["Fy.", "Fr.", "R-Fr.", "So.", "R-So.", "Jr.", "R-Jr.", "Sr.", "R-Sr.", "Gr."];
+          let aSortValue = this.sortKey === "Year" ? yearOrder.indexOf(a.Year) : a[this.sortKey];
+          let bSortValue = this.sortKey === "Year" ? yearOrder.indexOf(b.Year) : b[this.sortKey];
+        
+          // If a.year or b.year is not in yearOrder, set their sortValue to a very large number
+          const maxYearOrderIndex = yearOrder.length;
+          aSortValue = aSortValue === -1 ? maxYearOrderIndex : aSortValue;
+          aSortValue = aSortValue === "" ? maxYearOrderIndex : aSortValue;
+          bSortValue = bSortValue === -1 ? maxYearOrderIndex : bSortValue;
+          bSortValue = bSortValue === "" ? maxYearOrderIndex : bSortValue;
+        
         
       
         if (typeof aSortValue === 'string' && typeof bSortValue === 'string') {
