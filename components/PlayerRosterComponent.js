@@ -151,6 +151,9 @@ export default {
           </div>
         </div>
       </div>
+      <div v-else>
+        please log in to see the roster
+      </div>
     </div>
   `,
   components: {
@@ -170,12 +173,15 @@ export default {
     };
   },
   mounted() {
-    this.loadPlayer();
-    this.loginSuccess = this.$route.query.success === 'true';
-    if(this.$route.query.success === 'true' && window.newUser() == true){
-      new bootstrap.Modal(document.getElementById('newsSubscriptionModal')).show();
-      
+    if(this.isLoggedIn){
+      this.loadPlayer();
+      this.loginSuccess = this.$route.query.success === 'true';
+      if(this.$route.query.success === 'true' && window.newUser() == true){
+        new bootstrap.Modal(document.getElementById('newsSubscriptionModal')).show();
+        
+      }        
     }
+    
   },
   computed: {
     isLoggedIn() {
@@ -267,15 +273,10 @@ export default {
           this.dbError = true;
         });
       }).catch((error) => {
+        console.log(error);
         this.fireStoreError = true;
       });
       
     },
-    add(){
-      
-    },
-    release(){
-      
-    }
   },
 };
