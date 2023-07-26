@@ -6,70 +6,104 @@ export default {
       Player is not added because roster is full. (max:10 players)
       <button type="button" class="btn-close position-absolute end-0" @click="noAddError = false"></button>
     </div>
-    <div v-if="isLoading">
-      <div class="loading-container" style="justify-content: center; align-items: center;">
-        <div class="spinner-border text-primary" role="status">
-          <span class="sr-only">Loading...</span>
+    <div class="container">
+      <h1>Top Players</h1>
+      
+      <div class="row">
+        <div class="col-md-3">
+          <div class="mb-3">
+            <label for="searchFilter">Search by Name:</label>
+            <input id="searchFilter" class="form-control" type="text" v-model="searchQuery" placeholder="Enter player name...">
+          </div>
         </div>
-        <p class="ml-2">Your data is loading... Please wait.</p>
-      </div>
-    </div>
-    <div v-else>
-      <div class="container">
-        <h1>Top Players</h1>
+        <div class="col-md-3">
+          <div class="mb-3">
+            <label for="statsKey">Stats:</label>
+            <select id="statsKey" class="form-select">
+              <option value="kill">Kills</option>
+              <option value="pct">Kill%</option>
+              <option value="block">Blocks</option>
+              <option value="assist">Assists</option>
+              <option value="dig">Digs</option>
+              <option value="ace">Aces</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="mb-3">
+            <label for="sortKey">Sort by:</label>
+            <select id="sortKey" class="form-select" v-model="sortKey">
+              <option value="Name">Name</option>
+              <option value="Position">Position</option>
+              <option value="School">School</option>
+              <option value="Year">School Level</option>
+              <option value="Points">Points</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="mb-3">
+            <label for="perPage">Results per page:</label>
+            <select id="perPage" class="form-select" v-model="perPage">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+            </select>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4">
             <div class="mb-3">
-              <label for="statsKey">Stats:</label>
-              <select id="statsKey" class="form-select">
-                <option value="kill">Kills</option>
-                <option value="pct">Kill%</option>
-                <option value="block">Blocks</option>
-                <option value="assist">Assists</option>
-                <option value="dig">Digs</option>
-                <option value="ace">Aces</option>
+              <label for="selectedSchools">Schools:</label>
+              <select id="selectedSchools" multiple  v-model="selectedSchools">
+                <option v-for="school in schools" :key="school" :value="school">{{ school }}</option>
               </select>
             </div>
           </div>
           <div class="col-md-4">
             <div class="mb-3">
-              <label for="sortKey">Sort by:</label>
-              <select id="sortKey" class="form-select" v-model="sortKey">
-                <option value="Name">Name</option>
-                <option value="Position">Position</option>
-                <option value="School">School</option>
-                <option value="Year">School Level</option>
-                <option value="Points">Points</option>
+              <label for="selectedPositions">Positions:</label>
+              <select id="selectedPositions" multiple  v-model="selectedPositions">
+                <option v-for="position in positions" :key="position" :value="position">{{ position }}</option>
               </select>
             </div>
           </div>
           <div class="col-md-4">
             <div class="mb-3">
-              <label for="perPage">Results per page:</label>
-              <select id="perPage" class="form-select" v-model="perPage">
-                <option value="5">5</option>
-                <option value="10">10</option>
-                <option value="15">15</option>
+              <label for="selectedYears">Years:</label>
+              <select id="selectedYears" multiple  v-model="selectedYears">
+                <option v-for="year in years" :key="year" :value="year">{{ year }}</option>
               </select>
-            </div>
-          </div>
-          <div class="d-flex align-items-end">
-            <div class="mb-3 form-check">
-              <input id="showOwnedPlayers" class="form-check-input" type="checkbox" v-model="showOwnedPlayers">
-              <label class="form-check-label" for="showOwnedPlayers">Show owned players</label>
             </div>
           </div>
         </div>
+    
+        <div v-if="isLoggedIn" class="d-flex align-items-end">
+          <div class="mb-3 form-check">
+            <input id="showOwnedPlayers" class="form-check-input" type="checkbox" v-model="showOwnedPlayers" />
+            <label class="form-check-label" for="showOwnedPlayers">Show owned players</label>
+          </div>
+        </div>
+      </div>
+      <div v-if="isLoading">
+        <div class="loading-container" style="justify-content: center; align-items: center;">
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <p class="ml-2">Your data is loading... Please wait.</p>
+        </div>
+      </div>
+      <div v-else>
         <div class="row">
           <div class="col-md-12">
             <div v-for="player in filteredList" :key="player.Name">
-              <PlayerCard :player="player"  :class="getPlayerCardClass(player)">
-                <div v-if="isLoggedIn" style="position:absolute; top:0;right:0">
+              <PlayerCard :player="player" :class="getPlayerCardClass(player)">
+                <div v-if="isLoggedIn" style="position: absolute; top: 0; right: 0;">
                   <button v-if="!owned(player)" class="btn btn-primary" @click="addPlayer(player)">Add</button>
                   <button v-if="isDroppable(player)" class="btn btn-danger" @click="releasePlayer(player)">Release</button>
                 </div>
               </PlayerCard>
-              <br>
+              <br />
             </div>
           </div>
         </div>
@@ -92,6 +126,7 @@ export default {
         </div>
       </div>
     </div>
+    
   `,
   components: {
     PlayerCard,
@@ -100,30 +135,72 @@ export default {
     return {
       isLoading: true,
       sortKey: 'Name',
-      showOwnedPlayers: false,
+      showOwnedPlayers: true,
       perPage: 5,
       currentPage: 1,
       totalPages: 0,
       unsortedPlayers: [],
       ownedPlayers: [],
       noAddError: false,
+      schools: [],
+
+      positions: ["L", "S", "MB", "OH", "OPP"],
+      years: ["Fy.", "Fr.", "R-Fr.", "So.", "R-So.", "Jr.", "R-Jr.", "Sr.", "R-Sr.", "Gr."],
+      selectedSchools: [], // Array to store selected schools
+      selectedPositions: [], // Array to store selected positions
+      selectedYears: [], // Array to store selected years
+      searchQuery: '', // String to store the search query
+      
     };
   },
   mounted() {
+    this.schools = window.all_school.slice()
     this.loadDataFromDB();
+    new MultipleSelect('#selectedSchools', {
+        placeholder: 'filter school',
+      });
+    new MultipleSelect('#selectedPositions', {
+        placeholder: 'filter position',
+      });
+    new MultipleSelect('#selectedYears', {
+        placeholder: 'filter year',
+      });
+    
+    
+    // select.setSelected(['java']); 
   },
   computed: {
     isLoggedIn() {
       return window.user != null;
     },
     filteredList() {
+      
       let list = this.unsortedPlayers.slice();
 
       // Apply filter by owned players
+      
+      if (this.searchQuery.length != 0) {
+        list = list.filter((obj) => obj.Name.includes(this.searchQuery));
+      }
+
+      if (this.selectedSchools.length != 0) {
+        list = list.filter((obj) => this.selectedSchools.includes(obj.School));
+      }
+
+      if (this.selectedPositions.length != 0) {
+        list = list.filter((obj) => this.selectedPositions.includes(obj.Position));
+      }
+
+      if (this.selectedYears.length != 0) {
+        list = list.filter((obj) => this.selectedYears.includes(obj.Year));
+      }
+
       if (!this.showOwnedPlayers) {
         list = list.filter((obj) => !this.ownedPlayers.includes(obj.id));
       }
 
+      
+      
       // Sort the list based on the selected key
       list.sort((a, b) => {
         const yearOrder = ["Fy.", "Fr.", "R-Fr.", "So.", "R-So.", "Jr.", "R-Jr.", "Sr.", "R-Sr.", "Gr."];
@@ -199,6 +276,7 @@ export default {
       window.getAllPlayers()
         .then((querySnapshot) => {
           this.unsortedPlayers =  querySnapshot;
+          
         })
         .catch((error) => {
           console.log(error)
@@ -208,6 +286,7 @@ export default {
         })
         .finally(() => {
           this.isLoading = false;
+          
         })
     },
     owned(player){
@@ -240,6 +319,5 @@ export default {
         'text-white': this.ownedPlayers.includes(player.id)
       };
     },
-    
   },
 };
