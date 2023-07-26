@@ -21,6 +21,9 @@ export default {
         <div class="col-lg-6">
           <div class="card mb-3" v-for="(player, index) in getCurrentPagePlayers" :key="player.name" :class="getPlayerCardClass(player)">
             <div class="card-body">
+              <div style="position:absolute; top:0; right:0;">
+                <button class="btn btn-primary me-2" @click="viewRoster(player)">view roster</button>
+              </div>
               <h5 class="card-title">Rank {{ player.rank }}: {{ relabel(player) }}</h5>
               <div class="card-text">
                 <p>Points: {{ calcPoints(player) }}</p>
@@ -237,6 +240,9 @@ export default {
       if (page >= 1 && page <= this.totalPages) {
         this.currentPage = page;
       }
+    },
+    viewRoster(player){
+      this.$router.push({path: "/user/"+player.name[7]});
     },
   }
 };
