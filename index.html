@@ -40,7 +40,7 @@
     crossorigin="anonymous"></script>
 
   <!-- chart js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js" integrity="sha384-YAshAm4KKjf8V01c4sdNbPYiwU0D0Q82fjMHhKw8VvP0ecY4fxXsZAHxC4r4Ei+T" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.1/dist/chart.umd.js" integrity="sha384-FcdC/7LqNLqEEVRNHBtaEajhgI6VHAcEp1ZFa0YGMiqnM1r/7d0Z/52UcvbMGwYs" crossorigin="anonymous"></script>
   
   <script type="module" src="./md.js"></script>
   
@@ -54,6 +54,9 @@
     import LogoutComponent from './components/LogoutComponent.js';
     import HomeComponent from './components/HomeComponent.js';
     import PlayerRosterComponent from './components/PlayerRosterComponent.js'
+    import UserComponent from './components/UserComponent.js'
+
+    
     import AvailablePlayersComponent from './components/AvailablePlayersComponent.js'
     import ArticleComponent from './components/ArticleComponent.js'
     import LeaderBoardComponent from './components/LeaderBoardComponent.js'
@@ -66,6 +69,7 @@
       {path: "/login", component: LoginComponent},
       {path: "/logout", component: LogoutComponent},
       {path: "/roster", component: PlayerRosterComponent},
+      {path: "/user/:id", component: UserComponent},
       {path: "/top-players", component: AvailablePlayersComponent},
       {path: "/leaderboard", component: LeaderBoardComponent},
       {path: "/article/:id", component: ArticleComponent, props: true},
