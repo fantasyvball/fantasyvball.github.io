@@ -11,6 +11,10 @@ import { getAuth, RecaptchaVerifier, signInWithPhoneNumber, updateProfile } from
 
 import { isSignInWithEmailLink, sendSignInLinkToEmail, signInWithEmailLink } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"
 
+import my_super_list from "./player.js"
+
+import all_school from "./all_school.js"
+
 // TODO: Add SDKs for Firebase products that you want to use
 
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -59,7 +63,7 @@ const appCheck = initializeAppCheck(fire_app, {
 const auth = getAuth();
 auth.languageCode = 'en';
 
-let my_super_list = []
+
 let my_secret_list = []
 
 function handlePhoneNumberAuth(phoneNumber) {
@@ -350,19 +354,7 @@ function getAllPlayers() {
       resolve(my_super_list.slice())
     }
     else{
-      const db = getFirestore(fire_app);
-      const usersCollection = collection(db, "players");
-      getDocs(usersCollection)
-        .then((querySnapshot) => {
-          querySnapshot.forEach((doc) => {
-            my_super_list.push({ id: doc.id, ...doc.data() });
-          })
-          resolve(my_super_list.slice())
-        })
-        .catch((error) => {
-          console.log("Error getting documents: ", error);
-          reject(error)
-        });
+      reject()
     }
   });
 }
@@ -400,3 +392,5 @@ window.secret_list_start = secret_list_start
 
 window.fireAuthOut = fireAuthOut
 window.getPlayerById = getPlayerById
+
+window.all_school = all_school
