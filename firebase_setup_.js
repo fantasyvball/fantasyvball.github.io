@@ -196,6 +196,38 @@ function initList() {
   });
 }
 
+function getUserRoster(uid){
+  return new Promise((resolve, reject) => {
+    if(!['K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V'].includes(uid)){
+      reject()
+    }
+    else{
+      const dbRef = ref(getDatabase());
+      let out = [];
+      get(child(dbRef, "users/"+uid)).then((snapshot) => {
+        if (snapshot.exists()) {
+          out = snapshot.val();
+          for(let i = 0; i < 7; i++){
+            if(out[i].includes("******************")){
+              out[i] = null
+            }
+          }
+          while(out[out.length - 1].includes("******************")){
+            out.splice(out.length - 1,1)
+          }
+        } else {
+          // ignore
+        }
+        resolve(out);
+      }).catch((error) => {
+        console.log(error);
+        reject(error);
+      });
+    }
+    
+  });
+}
+  
 function secret_list_getter(){
   return my_secret_list.slice()
 }
@@ -357,6 +389,8 @@ window.hasFireUser = hasFireUser;
 window.newUser = newUser;
 window.UpdateSubsribeStatus = UpdateSubsribeStatus;
 window.getAllPlayers = getAllPlayers;
+window.initList = initList
+window.getUserRoster = getUserRoster
 
 window.secret_list_getter = secret_list_getter
 window.secret_list_adder = secret_list_adder
@@ -366,4 +400,3 @@ window.secret_list_start = secret_list_start
 
 window.fireAuthOut = fireAuthOut
 window.getPlayerById = getPlayerById
-window.initList = initList
