@@ -15,6 +15,9 @@ import my_super_list from "./player.js"
 
 import all_school from "./all_school.js"
 
+import conf_member from "./conf_member.js"
+
+
 // TODO: Add SDKs for Firebase products that you want to use
 
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -394,3 +397,4 @@ window.fireAuthOut = fireAuthOut
 window.getPlayerById = getPlayerById
 
 window.all_school = all_school
+window.conf_member = conf_member
