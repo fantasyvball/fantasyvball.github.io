@@ -54,8 +54,13 @@ export default {
         <div class="row">
           <div class="col-md-4">
             <div class="mb-3">
-              <label for="selectedSchools">Schools:</label>
+              <label for="selectedSchools">Conferences/Schools:</label>
               <select id="selectedSchools" multiple  v-model="selectedSchools">
+                <option value="all">All Schools</option>
+                
+                <option value="conf" disabled>Conferences</option>
+                <option v-for="conf in allConf" :key="conf" :value="conf">{{ conf }}</option>
+                <option value="sch" disabled>Schools</option>
                 <option v-for="school in schools" :key="school" :value="school">{{ school }}</option>
               </select>
             </div>
@@ -64,6 +69,8 @@ export default {
             <div class="mb-3">
               <label for="selectedPositions">Positions:</label>
               <select id="selectedPositions" multiple  v-model="selectedPositions">
+                <option value="all">All Positions</option>
+              
                 <option v-for="position in positions" :key="position" :value="position">{{ position }}</option>
               </select>
             </div>
@@ -72,6 +79,7 @@ export default {
             <div class="mb-3">
               <label for="selectedYears">Years:</label>
               <select id="selectedYears" multiple  v-model="selectedYears">
+                <option value="all">All Year</option>
                 <option v-for="year in years" :key="year" :value="year">{{ year }}</option>
               </select>
             </div>
@@ -143,8 +151,8 @@ export default {
       ownedPlayers: [],
       noAddError: false,
       schools: [],
-
-      positions: ["L", "S", "MB", "OH", "OPP"],
+      allConf: ['AAC', 'ACC', 'ASUN', 'America East', 'Atlantic 10', 'Big 12', 'Big East', 'Big Sky', 'Big South', 'Big Ten', 'Big West', 'C-USA', 'CAA', 'DI Independent', 'Horizon', 'Ivy League', 'MAAC', 'MAC', 'MEAC', 'MVC', 'Mountain West', 'NEC', 'OVC', 'Pac-12', 'Patriot', 'SEC', 'SWAC', 'SoCon', 'Southland', 'Summit League', 'Sun Belt', 'WAC', 'WCC'],
+      positions: ["L", "S", "MB", "OH", "OPP", "DS"],
       years: ["Fy.", "Fr.", "R-Fr.", "So.", "R-So.", "Jr.", "R-Jr.", "Sr.", "R-Sr.", "Gr."],
       selectedSchools: [], // Array to store selected schools
       selectedPositions: [], // Array to store selected positions
@@ -156,15 +164,19 @@ export default {
   mounted() {
     this.schools = window.all_school.slice()
     this.loadDataFromDB();
-    new MultipleSelect('#selectedSchools', {
-        placeholder: 'filter school',
-      });
-    new MultipleSelect('#selectedPositions', {
-        placeholder: 'filter position',
-      });
-    new MultipleSelect('#selectedYears', {
-        placeholder: 'filter year',
-      });
+    setTimeout(() => {
+      new MultipleSelect('#selectedSchools', {
+          placeholder: 'filter school',
+        });
+      new MultipleSelect('#selectedPositions', {
+          placeholder: 'filter position',
+        });
+      new MultipleSelect('#selectedYears', {
+          placeholder: 'filter year',
+        });
+    }, "0");
+    
+    
     
     
     // select.setSelected(['java']); 
@@ -180,18 +192,35 @@ export default {
       // Apply filter by owned players
       
       if (this.searchQuery.length != 0) {
-        list = list.filter((obj) => obj.Name.includes(this.searchQuery));
+        
+        list = list.filter((obj) => obj.Name.toLocaleLowerCase().includes(this.searchQuery.toLocaleLowerCase()));
       }
 
-      if (this.selectedSchools.length != 0) {
-        list = list.filter((obj) => this.selectedSchools.includes(obj.School));
+      console.log(list.length)
+      
+
+      if (this.selectedSchools.length != 0 && !this.selectedSchools.includes("all")) {
+        let allowedSchool = [];
+        // Find the intersection of arr1 and arr2
+        const intersected = this.selectedSchools.filter((item) => this.allConf.includes(item));
+        intersected.forEach((el) => {
+          allowedSchool = allowedSchool.concat(window.conf_member[el])
+        })
+        // Find the non-intersection (elements in arr2 but not in arr1)
+        const notIntersected = this.selectedSchools.filter((item) => !this.allConf.includes(item));
+        allowedSchool = allowedSchool.concat(notIntersected)
+        list = list.filter((obj) => allowedSchool.includes(obj.School));
       }
 
-      if (this.selectedPositions.length != 0) {
-        list = list.filter((obj) => this.selectedPositions.includes(obj.Position));
+      if (this.selectedPositions.length != 0 && !this.selectedPositions.includes("all")) {
+        
+        list = list.filter((obj) => {
+           const [pos1, pos2] = obj.Position.split("/")
+           return this.selectedPositions.includes(pos1) || this.selectedPositions.includes(pos2) 
+        });
       }
 
-      if (this.selectedYears.length != 0) {
+      if (this.selectedYears.length != 0 && !this.selectedYears.includes("all")) {
         list = list.filter((obj) => this.selectedYears.includes(obj.Year));
       }
 
@@ -226,7 +255,9 @@ export default {
       // Pagination
       this.perPage = parseInt(this.perPage)
       const totalPages = Math.ceil(list.length / this.perPage);
-      if(totalPages < this.currentPage){
+      if(totalPages == 0){
+        this.currentPage = 1
+      }else if(totalPages < this.currentPage){
         this.currentPage = totalPages
       }
       this.totalPages = totalPages;
@@ -235,6 +266,9 @@ export default {
       const endIndex = startIndex + this.perPage;
       
       list = list.slice(startIndex, endIndex);
+
+      console.log(list.length)
+      
       return list;
       
     },
