@@ -38,6 +38,8 @@ export default {
               <option value="School">School</option>
               <option value="Year">School Level</option>
               <option value="Points">Points</option>
+              <option value="NO">Jersey Number</option>
+              <option value="Height">Height</option>
             </select>
           </div>
         </div>
@@ -233,15 +235,30 @@ export default {
       // Sort the list based on the selected key
       list.sort((a, b) => {
         const yearOrder = ["Fy.", "Fr.", "R-Fr.", "So.", "R-So.", "Jr.", "R-Jr.", "Sr.", "R-Sr.", "Gr."];
-          let aSortValue = this.sortKey === "Year" ? yearOrder.indexOf(a.Year) : a[this.sortKey];
-          let bSortValue = this.sortKey === "Year" ? yearOrder.indexOf(b.Year) : b[this.sortKey];
+
+          let aSortValue;
+          let bSortValue;
+          if(this.sortKey === "Height"){
+            const [feet_a,inch_a] = a.Height.split("-")
+            const [feet_b,inch_b] = b.Height.split("-")
+            aSortValue = -Number(feet_a) * 12 - (Number(inch_a))
+            bSortValue = -Number(feet_b) * 12 - (Number(inch_b))
+            
+          }else{
+            aSortValue = this.sortKey === "Year" ? yearOrder.indexOf(a.Year) : a[this.sortKey];
+            bSortValue = this.sortKey === "Year" ? yearOrder.indexOf(b.Year) : b[this.sortKey];
+          }
+          
         
           // If a.year or b.year is not in yearOrder, set their sortValue to a very large number
           const maxYearOrderIndex = yearOrder.length;
           aSortValue = aSortValue === -1 ? maxYearOrderIndex : aSortValue;
           aSortValue = aSortValue === "" ? maxYearOrderIndex : aSortValue;
+          aSortValue = aSortValue === undefined ? maxYearOrderIndex : aSortValue;
+          
           bSortValue = bSortValue === -1 ? maxYearOrderIndex : bSortValue;
           bSortValue = bSortValue === "" ? maxYearOrderIndex : bSortValue;
+          bSortValue = bSortValue === undefined ? maxYearOrderIndex : bSortValue;
         
         
       
@@ -277,7 +294,7 @@ export default {
       const startIndex = 0 * this.perPage;
 
       
-      const closestPages = 2; // Show 5 pages before and after the current page
+      const closestPages = 5; // Show 5 pages before and after the current page
   
       let startPage = Math.max(this.currentPage - closestPages, 1);
       let endPage = Math.min(this.currentPage + closestPages, this.totalPages);
