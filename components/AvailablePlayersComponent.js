@@ -294,7 +294,7 @@ export default {
       const startIndex = 0 * this.perPage;
 
       
-      const closestPages = 5; // Show 5 pages before and after the current page
+      const closestPages = 2; // Show 5 pages before and after the current page
   
       let startPage = Math.max(this.currentPage - closestPages, 1);
       let endPage = Math.min(this.currentPage + closestPages, this.totalPages);
