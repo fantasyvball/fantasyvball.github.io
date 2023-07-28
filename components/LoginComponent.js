@@ -21,9 +21,9 @@ export default {
       <p class="mb-0">We apologize for any inconvenience. 🥺🙏🙇</p>
     </div>
     
-    <section class="vh-100" v-if="form1">
+    <section class="vh-80" v-if="form1">
       <div class="container d-flex justify-content-center align-items-center h-100">
-        <div class="card p-4 custom-card" style="background-color: #d1d1d1; color:#000000; border-radius: 1rem;">
+        <div class="card p-4 custom-card" style="background-color: #d1d1d1; color:#000000; border-radius: 1rem; min-width:380px">
           <div class="card-body p-5 text-center">
 
             <h3 class="mb-5">Sign in</h3>
@@ -64,9 +64,9 @@ export default {
         </div>
       </div>
     </section>
-    <section class="vh-100" v-if="form2">
+    <section class="vh-80" v-if="form2">
       <div class="container d-flex justify-content-center align-items-center h-100">
-        <div class="card p-4 custom-card" style="background-color: #d1d1d1; color:#000000; border-radius: 1rem;">
+        <div class="card p-4 custom-card" style="background-color: #d1d1d1; color:#000000; border-radius: 1rem; min-width:380px">
           <div class="card-body p-5 text-center">
 
             <h3 class="mb-5">Sign in</h3>
@@ -102,9 +102,9 @@ export default {
         </div>
       </div>
     </section>
-    <section class="vh-100" v-if="form3">
+    <section class="vh-80" v-if="form3">
       <div class="container d-flex justify-content-center align-items-center h-100">
-        <div class="card p-4 custom-card" style="background-color: #d1d1d1; color:#000000; border-radius: 1rem;">
+        <div class="card p-4 custom-card" style="background-color: #d1d1d1; color:#000000; border-radius: 1rem; min-width:380px">
           <div class="card-body p-5 text-center">
 
             <h3 class="mb-5">Check your text message</h3>
