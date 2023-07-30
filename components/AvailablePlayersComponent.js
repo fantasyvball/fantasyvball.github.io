@@ -196,11 +196,7 @@ export default {
       if (this.searchQuery.length != 0) {
         
         list = list.filter((obj) => obj.Name.toLocaleLowerCase().includes(this.searchQuery.toLocaleLowerCase()));
-      }
-
-      console.log(list.length)
-      
-
+      }      
       if (this.selectedSchools.length != 0 && !this.selectedSchools.includes("all")) {
         let allowedSchool = [];
         // Find the intersection of arr1 and arr2
@@ -282,19 +278,16 @@ export default {
       const startIndex = (this.currentPage - 1) * this.perPage;
       const endIndex = startIndex + this.perPage;
       
-      list = list.slice(startIndex, endIndex);
-
-      console.log(list.length)
+      list = list.slice(startIndex, endIndex);      
       
       return list;
-      
     },
     paginationList() {
       // dummy calculation to force recalculation of pagination when perPage changes
       const startIndex = 0 * this.perPage;
 
       
-      const closestPages = 2; // Show 5 pages before and after the current page
+      const closestPages = 5; // Show 5 pages before and after the current page
   
       let startPage = Math.max(this.currentPage - closestPages, 1);
       let endPage = Math.min(this.currentPage + closestPages, this.totalPages);
