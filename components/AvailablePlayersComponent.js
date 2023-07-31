@@ -94,6 +94,10 @@ export default {
             <label class="form-check-label" for="showOwnedPlayers">Show owned players</label>
           </div>
         </div>
+        <div class="mb-3 form-check">
+          <input id="collapseAll" class="form-check-input" type="checkbox" v-model="collapseAll" @change="onCollapseAllChange"/>
+          <label class="form-check-label" for="collapseAll">Collapse All</label>
+        </div>
       </div>
       <div v-if="isLoading">
         <div class="loading-container" style="justify-content: center; align-items: center;">
@@ -107,10 +111,10 @@ export default {
         <div class="row">
           <div class="col-md-12">
             <div v-for="player in filteredList" :key="player.Name">
-              <PlayerCard :player="player" :class="getPlayerCardClass(player)">
-                <div v-if="isLoggedIn" style="position: absolute; top: 0; right: 0;">
-                  <button v-if="!owned(player)" class="btn btn-primary" @click="addPlayer(player)">Add</button>
-                  <button v-if="isDroppable(player)" class="btn btn-danger" @click="releasePlayer(player)">Release</button>
+              <PlayerCard :player="player" :class="getPlayerCardClass(player)" :collapse="collapseAll">
+                <div>
+                  <button v-if="isLoggedIn && !owned(player)" class="btn btn-primary" @click="addPlayer(player)">Add</button>
+                  <button v-if="isLoggedIn && isDroppable(player)" class="btn btn-danger" @click="releasePlayer(player)">Release</button>
                 </div>
               </PlayerCard>
               <br />
@@ -160,7 +164,7 @@ export default {
       selectedPositions: [], // Array to store selected positions
       selectedYears: [], // Array to store selected years
       searchQuery: '', // String to store the search query
-      
+      collapseAll: false,
     };
   },
   mounted() {
@@ -188,6 +192,9 @@ export default {
       return window.user != null;
     },
     filteredList() {
+
+      // dummy calculation do not remove.
+      const bruh = this.collapseAll * 0
       
       let list = this.unsortedPlayers.slice();
 
@@ -237,8 +244,8 @@ export default {
           if(this.sortKey === "Height"){
             const [feet_a,inch_a] = a.Height.split("-")
             const [feet_b,inch_b] = b.Height.split("-")
-            aSortValue = -Number(feet_a) * 12 - (Number(inch_a))
-            bSortValue = -Number(feet_b) * 12 - (Number(inch_b))
+            aSortValue = -(Number(feet_a) * 12 + (Number(inch_a)))
+            bSortValue = -(Number(feet_b) * 12 + (Number(inch_b)))
             
           }else{
             aSortValue = this.sortKey === "Year" ? yearOrder.indexOf(a.Year) : a[this.sortKey];
@@ -284,7 +291,7 @@ export default {
     },
     paginationList() {
       // dummy calculation to force recalculation of pagination when perPage changes
-      const startIndex = 0 * this.perPage;
+      const _ = 0 * this.perPage;
 
       
       const closestPages = 2; // Show 5 pages before and after the current page
@@ -363,5 +370,11 @@ export default {
         'text-white': this.ownedPlayers.includes(player.id)
       };
     },
+    onCollapseAllChange(){
+      this.isLoading = true;
+      setTimeout(() => {
+        this.isLoading = false;
+      },0);
+    }
   },
 };
