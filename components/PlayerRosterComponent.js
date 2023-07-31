@@ -77,25 +77,19 @@ export default {
               <div class="col-md-4">
                 <h3>L</h3>
                 <PlayerCard :player="starter[0]" :style="calcStyle(0,'L')">
-                  <div style="position:absolute; top:0;right:0">
-                    <button class="btn btn-secondary" @click="sendToBench(0)">Bench</button>
-                  </div>
+                  <button class="btn btn-warning  me-2" @click="sendToBench(0)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-4">
                 <h3>S</h3>
                 <PlayerCard :player="starter[1]" :style="calcStyle(1,'S')">
-                  <div style="position:absolute; top:0;right:0">
-                    <button class="btn btn-secondary" @click="sendToBench(1)">Bench</button>
-                  </div>
+                  <button class="btn btn-warning  me-2" @click="sendToBench(1)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-4">
                 <h3>OPP</h3>
                 <PlayerCard :player="starter[2]" :style="calcStyle(2,'OPP')">
-                  <div style="position:absolute; top:0;right:0">
-                    <button class="btn btn-secondary" @click="sendToBench(2)">Bench</button>
-                  </div>
+                  <button class="btn btn-warning  me-2" @click="sendToBench(2)">Bench</button>
                 </PlayerCard>
               </div>
             </div>
@@ -103,17 +97,13 @@ export default {
               <div class="col-md-6">
                 <h3>MB</h3>
                 <PlayerCard :player="starter[3]" :style="calcStyle(3,'MB')">
-                  <div style="position:absolute; top:0;right:0">
-                    <button class="btn btn-secondary" @click="sendToBench(3)">Bench</button>
-                  </div>
+                  <button class="btn btn-warning  me-2" @click="sendToBench(3)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-6">
                 <h3>MB</h3>
                 <PlayerCard :player="starter[4]" :style="calcStyle(4,'MB')">
-                  <div style="position:absolute; top:0;right:0">
-                    <button class="btn btn-secondary" @click="sendToBench(4)">Bench</button>
-                  </div>
+                  <button class="btn btn-warning  me-2" @click="sendToBench(4)">Bench</button>
                 </PlayerCard>
               </div>
             </div>
@@ -121,17 +111,13 @@ export default {
               <div class="col-md-6">
                 <h3>OH</h3>
                 <PlayerCard :player="starter[5]" :style="calcStyle(5,'OH')">
-                  <div style="position:absolute; top:0;right:0">
-                    <button class="btn btn-secondary" @click="sendToBench(5)">Bench</button>
-                  </div>
+                  <button class="btn btn-warning  me-2" @click="sendToBench(5)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-6">
                 <h3>OH</h3>
                 <PlayerCard :player="starter[6]" :style="calcStyle(6,'OH')">
-                  <div style="position:absolute; top:0;right:0">
-                    <button class="btn btn-secondary" @click="sendToBench(6)">Bench</button>
-                  </div>
+                  <button class="btn btn-warning  me-2" @click="sendToBench(6)">Bench</button>
                 </PlayerCard>
               </div>
             </div>
@@ -140,10 +126,8 @@ export default {
                 <h3>Bench</h3>
                 <div v-for="playerIndexPair in bench" :key="bench" class="mb-3">
                   <PlayerCard :player="playerIndexPair[0]">
-                    <div style="position:absolute; top:0; right:0;">
-                      <button class="btn btn-primary me-2" @click="sendToStart(playerIndexPair[1])">Start</button>
-                      <button class="btn btn-danger" @click="releasePlayer(playerIndexPair[1])">Release</button>
-                    </div>
+                    <button class="btn btn-primary me-2" @click="sendToStart(playerIndexPair[1])">Start</button>
+                    <button class="btn btn-danger me-2" @click="releasePlayer(playerIndexPair[1])">Release</button>
                   </PlayerCard>
                 </div>
               </div>
