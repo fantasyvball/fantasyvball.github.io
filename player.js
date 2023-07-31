@@ -1,6 +1,6 @@
 export default [{
     'Name': "A'Nylah Cobb",
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '5-10',
     'Year': 'Jr.',
     'NO': 11,
@@ -8,7 +8,7 @@ export default [{
     'id': 'SicigxPisvaPJNKHiMMd'
 }, {
     'Name': "A'siya Magazine",
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Fr.',
     'NO': 11,
@@ -32,7 +32,7 @@ export default [{
     'id': 'XYqprOIbBILPCXwBrreO'
 }, {
     'Name': 'AG Vandagriff',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 9,
@@ -64,7 +64,7 @@ export default [{
     'id': 'WerxUxJzfEwPZVTlPahq'
 }, {
     'Name': 'Aaliyah Mitchell',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-9',
     'Year': 'Fr.',
     'NO': 8,
@@ -224,7 +224,7 @@ export default [{
     'id': 'JWokGGtRBIWobHvUFVDN'
 }, {
     'Name': 'Abby Clayton',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '6-0',
     'Year': 'R-So.',
     'NO': 4,
@@ -288,7 +288,7 @@ export default [{
     'id': 'RCRyHycprXkUiHCWgiay'
 }, {
     'Name': 'Abby Harris',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 1,
@@ -376,7 +376,7 @@ export default [{
     'id': 'gPCzGPTouJbEfhuGZCic'
 }, {
     'Name': 'Abby Morreale',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 11,
@@ -408,7 +408,7 @@ export default [{
     'id': 'gkPhAqELndQszHTQTtin'
 }, {
     'Name': 'Abby Powers',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '6-2',
     'Year': 'Jr.',
     'NO': 17,
@@ -600,7 +600,7 @@ export default [{
     'id': 'dmnirgNsUNCyXIAdJkQd'
 }, {
     'Name': 'Ada Agolli',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 20,
@@ -648,7 +648,7 @@ export default [{
     'id': 'SxksugWIhsoKHuJJZWEn'
 }, {
     'Name': 'Addi Pelham',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 7,
@@ -720,7 +720,7 @@ export default [{
     'id': 'lNkKBeODNXZMAZPwTNmb'
 }, {
     'Name': 'Addison Chapman',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'Fr.',
     'NO': 18,
@@ -864,7 +864,7 @@ export default [{
     'id': 'fMvqOIpUYqHhDZpsWSxA'
 }, {
     'Name': 'Adriana Goetz-Morales',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Gr.',
     'NO': 4,
@@ -912,7 +912,7 @@ export default [{
     'id': 'dvaAnnUZNWqVeIIceDpi'
 }, {
     'Name': 'Ahzhi Coleman',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '5-11',
     'Year': 'Jr.',
     'NO': 2,
@@ -984,7 +984,7 @@ export default [{
     'id': 'FkDGSXDvnYMIiCCQjqRJ'
 }, {
     'Name': 'Ainsley Driska',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 4,
@@ -1008,7 +1008,7 @@ export default [{
     'id': 'bZWGgObyVIDceCQzuydM'
 }, {
     'Name': 'Ainslie  McLaughlin',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 19,
@@ -1080,7 +1080,7 @@ export default [{
     'id': 'okKsgYIEYvZMMCCwgEGF'
 }, {
     'Name': 'Akire Jones',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 17,
@@ -1392,7 +1392,7 @@ export default [{
     'id': 'YkKOdQxzTrsNVEfkrPAT'
 }, {
     'Name': 'Alexa Albinson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'Jr.',
     'NO': 13,
@@ -2048,7 +2048,7 @@ export default [{
     'id': 'SuNmjbbVaKLZdGeEzTVq'
 }, {
     'Name': 'Alleigh Johnson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-9',
     'Year': 'Jr.',
     'NO': 15,
@@ -2320,7 +2320,7 @@ export default [{
     'id': 'pUHGEPRZJOlQIXNfXgIs'
 }, {
     'Name': 'Ally Christman',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '5-10',
     'Year': 'Jr.',
     'NO': 6,
@@ -2568,7 +2568,7 @@ export default [{
     'id': 'fXovJeeMcRinqAEcFEPx'
 }, {
     'Name': 'Alyssa Groves',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': "6-4",
     'Year': 'Sr.',
     'NO': 14,
@@ -2584,7 +2584,7 @@ export default [{
     'id': 'XPlHDsoTFHKqCfifQTHb'
 }, {
     'Name': 'Alyssa Irwin',
-    'Position': 'MH/OH',
+    'Position': 'MB/OH',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 18,
@@ -2656,7 +2656,7 @@ export default [{
     'id': 'oQgosqbkNxxCEBXhiJkp'
 }, {
     'Name': 'Alyssa Radke',
-    'Position': 'OHRight-Side',
+    'Position': 'OH/OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 18,
@@ -2728,7 +2728,7 @@ export default [{
     'id': 'mQIwFVWaOeNBysuUenTA'
 }, {
     'Name': 'Amanda Burns',
-    'Position': 'Opposite/S',
+    'Position': 'OPP/S',
     'Height': "6-1",
     'Year': 'Jr.',
     'NO': 7,
@@ -2744,7 +2744,7 @@ export default [{
     'id': 'grMaplETHjcqIavHJBBA'
 }, {
     'Name': 'Amanda DeWitt',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 6,
@@ -2888,7 +2888,7 @@ export default [{
     'id': 'KjMHPybWAhJVbzQJSxXX'
 }, {
     'Name': 'Amaya Roberson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 11,
@@ -3024,7 +3024,7 @@ export default [{
     'id': 'qnZwKDLrWVPEqqGSeUxt'
 }, {
     'Name': 'Amelia Heywood',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'Fr.',
     'NO': 15,
@@ -3080,7 +3080,7 @@ export default [{
     'id': 'WonAKeymDWiOmnnHqaGp'
 }, {
     'Name': 'Amelie Lima',
-    'Position': 'S/Right-Side Attacker',
+    'Position': 'S/OPP',
     'Height': '-',
     'Year': 'Fy.',
     'NO': '',
@@ -3128,7 +3128,7 @@ export default [{
     'id': 'fNkFZIdSJrBLReVQPraZ'
 }, {
     'Name': 'Amina Shackelford',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'R-Jr.',
     'NO': 17,
@@ -3232,7 +3232,7 @@ export default [{
     'id': 'YOGIkHjgbTBCgtxofSbG'
 }, {
     'Name': 'Ana Fuertes',
-    'Position': 'RS/OPP',
+    'Position': 'OPP/OPP',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 14,
@@ -3640,7 +3640,7 @@ export default [{
     'id': 'sTfnFEsRrSqiWcdDHMNo'
 }, {
     'Name': 'Anllelivis Fernandez',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': '6-7',
     'Year': 'JR',
     'NO': 14,
@@ -3680,7 +3680,7 @@ export default [{
     'id': 'racyfQupxIMUxKkUuufs'
 }, {
     'Name': 'Anna Boezi',
-    'Position': 'Right-Side Hitter/MB',
+    'Position': 'OPP/MB',
     'Height': '6-2',
     'Year': '',
     'NO': 3,
@@ -3720,7 +3720,7 @@ export default [{
     'id': 'LichYXaAwmMSPDDWCIZz'
 }, {
     'Name': 'Anna Davis',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'RS Jr.',
     'NO': 8,
@@ -3768,7 +3768,7 @@ export default [{
     'id': 'nKWQcEGoaTaAIacwhNyg'
 }, {
     'Name': 'Anna Gadway',
-    'Position': 'RS/S',
+    'Position': 'OPP/S',
     'Height': '6-1',
     'Year': 'Sr.',
     'NO': 8,
@@ -3888,7 +3888,7 @@ export default [{
     'id': 'pVNMkTYNsnCsLDgVxHnp'
 }, {
     'Name': 'Anna Law',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'Sr.',
     'NO': 5,
@@ -4056,7 +4056,7 @@ export default [{
     'id': 'SbuxOLFSxOxLepYbjKzt'
 }, {
     'Name': 'Anna Shoemake',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-4',
     'Year': 'Jr.',
     'NO': 12,
@@ -4384,7 +4384,7 @@ export default [{
     'id': 'zNSmPVRNzTooKlSMzmti'
 }, {
     'Name': 'Annika Black',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Gr.',
     'NO': 11,
@@ -5048,7 +5048,7 @@ export default [{
     'id': 'wDBePKNjvakecWuhUfgA'
 }, {
     'Name': 'Ashlyn Olson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 9,
@@ -5176,7 +5176,7 @@ export default [{
     'id': 'xRuCNspWnsuPOqTrozBO'
 }, {
     'Name': 'Aubrey Deptula',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'Sr.',
     'NO': 23,
@@ -5408,7 +5408,7 @@ export default [{
     'id': 'PcYQoYSyvINfetWNGXAX'
 }, {
     'Name': 'Aulie Huff',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 12,
@@ -5432,7 +5432,7 @@ export default [{
     'id': 'hOKqESdutciCgkdzvmHp'
 }, {
     'Name': 'Autumn Flynn',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 15,
@@ -5464,7 +5464,7 @@ export default [{
     'id': 'osuoFGfGUInbzSULxJng'
 }, {
     'Name': 'Ava  Schubert',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 1,
@@ -5512,7 +5512,7 @@ export default [{
     'id': 'vmuYoqczsJIkbTZaKpcL'
 }, {
     'Name': 'Ava Derbes',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 8,
@@ -5560,7 +5560,7 @@ export default [{
     'id': 'HyqwJeiKVYHYgBETWqNL'
 }, {
     'Name': 'Ava Harris',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '5-10',
     'Year': 'Fr.',
     'NO': 6,
@@ -5576,7 +5576,7 @@ export default [{
     'id': 'HvehyetgtkDRpLEutlRE'
 }, {
     'Name': 'Ava Holden',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 14,
@@ -5792,7 +5792,7 @@ export default [{
     'id': 'vTkyzvtjTdVozJRgsgpQ'
 }, {
     'Name': 'Ava TeStrake',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-4',
     'Year': 'Fr.',
     'NO': 12,
@@ -5872,7 +5872,7 @@ export default [{
     'id': 'gUnTNPRrmdjuTuIMRnYl'
 }, {
     'Name': 'Avanii Allen',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-7',
     'Year': 'Jr.',
     'NO': 22,
@@ -6056,7 +6056,7 @@ export default [{
     'id': 'BfQsttUDBFAYepxdBPzW'
 }, {
     'Name': 'Avery Jones',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fy.',
     'NO': 14,
@@ -6080,7 +6080,7 @@ export default [{
     'id': 'KGIaPuAEPnqnzbdzELZD'
 }, {
     'Name': 'Avery Loeback',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 6,
@@ -6096,7 +6096,7 @@ export default [{
     'id': 'yLDgFrdrRWxTWMYBsFJH'
 }, {
     'Name': 'Avery Luoma',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': "6-1",
     'Year': 'Gr.',
     'NO': '',
@@ -6200,7 +6200,7 @@ export default [{
     'id': 'wqlIvwAFKmNJXpgwkBgr'
 }, {
     'Name': 'Avry Tatum',
-    'Position': 'Opposite/MB',
+    'Position': 'OPP/MB',
     'Height': '',
     'Year': 'So.',
     'NO': 13,
@@ -6224,7 +6224,7 @@ export default [{
     'id': 'vWDIvRCsfCNzHOZzFIAR'
 }, {
     'Name': 'Ayanna Kimbrough',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 15,
@@ -6576,7 +6576,7 @@ export default [{
     'id': 'uTezZZaRxllXDKDHspNa'
 }, {
     'Name': 'Baylee Bodily',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': "5-11",
     'Year': '',
     'NO': 7,
@@ -6848,7 +6848,7 @@ export default [{
     'id': 'UoUmJPuukceMvRGiIqIM'
 }, {
     'Name': 'Bella Rittenberg',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Fr.',
     'NO': 16,
@@ -6864,7 +6864,7 @@ export default [{
     'id': 'ELhQgRJPhjOAGmmhjxXI'
 }, {
     'Name': 'Bella Sinacori',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 4,
@@ -7000,7 +7000,7 @@ export default [{
     'id': 'bUZASiRAuIpREDkKBZsp'
 }, {
     'Name': 'Bianca Anderson',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 17,
@@ -7240,7 +7240,7 @@ export default [{
     'id': 'IwsVpMTMZxtwxXpUQZln'
 }, {
     'Name': 'Breanna McDonough',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'So.',
     'NO': 12,
@@ -7408,7 +7408,7 @@ export default [{
     'id': 'RdaWUePcgkQAcHxljeCg'
 }, {
     'Name': 'Bri Geurts',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 2,
@@ -7448,7 +7448,7 @@ export default [{
     'id': 'wtinAeGKJXVeqbPEdHrg'
 }, {
     'Name': 'Bria Plante',
-    'Position': 'MH/RS',
+    'Position': 'MB/RS',
     'Height': '6-4',
     'Year': 'Gr.',
     'NO': 31,
@@ -7600,7 +7600,7 @@ export default [{
     'id': 'gfHgtAVlkiLyBfcRqDfT'
 }, {
     'Name': 'Briea Craft',
-    'Position': 'RSH',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 5,
@@ -7728,7 +7728,7 @@ export default [{
     'id': 'qndfAyWJnhBXHkREBNVW'
 }, {
     'Name': 'Brittney Eskridge',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-6',
     'Year': 'Sr.',
     'NO': 17,
@@ -7792,7 +7792,7 @@ export default [{
     'id': 'vxQVAciytqfFHQZbeLvk'
 }, {
     'Name': 'Brooke Bryant',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Jr.',
     'NO': 2,
@@ -8160,7 +8160,7 @@ export default [{
     'id': 'qnsFdejVuHnRGxwdHDHD'
 }, {
     'Name': 'Brooklyn Stearns',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': "6-3",
     'Year': 'Fr.',
     'NO': '',
@@ -8232,7 +8232,7 @@ export default [{
     'id': 'zvjVISaaZiHohTNUtVPE'
 }, {
     'Name': 'Brynlee Arnold',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'So.',
     'NO': 7,
@@ -8544,7 +8544,7 @@ export default [{
     'id': 'uvAUVNWuAlHhwwxAVOGt'
 }, {
     'Name': 'Caitlyn Callahan',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'R-Jr.',
     'NO': 10,
@@ -8712,7 +8712,7 @@ export default [{
     'id': 'bbPFXpKgQGUMltxfYXcN'
 }, {
     'Name': 'Callie Martin',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Gr.',
     'NO': 13,
@@ -8784,7 +8784,7 @@ export default [{
     'id': 'mKfjktsofnKDVXtiIvyy'
 }, {
     'Name': 'Cameron Lucas',
-    'Position': 'MH/RS',
+    'Position': 'MB/RS',
     'Height': '5-11',
     'Year': 'Fr.',
     'NO': '',
@@ -8960,7 +8960,7 @@ export default [{
     'id': 'LFhkLcxriWhHCMNyKobV'
 }, {
     'Name': 'Camryn Hannah',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 8,
@@ -9208,7 +9208,7 @@ export default [{
     'id': 'izxXJyYTzTIcTummtBDI'
 }, {
     'Name': 'Carley McAleavey',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 12,
@@ -9424,7 +9424,7 @@ export default [{
     'id': 'foWerZtcraNoWtZrhuen'
 }, {
     'Name': 'Caroline Bien',
-    'Position': 'OHLibero',
+    'Position': 'OH/L',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 14,
@@ -9960,7 +9960,7 @@ export default [{
     'id': 'EGfDqOeSXakaxlOjLDJm'
 }, {
     'Name': 'Caylee Sharkey',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'So.',
     'NO': 9,
@@ -10184,7 +10184,7 @@ export default [{
     'id': 'yVZkvdlxrcQlILVIrEpd'
 }, {
     'Name': 'Chandler Parker',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 1,
@@ -10384,7 +10384,7 @@ export default [{
     'id': 'mnqwozggmApEATvNjVoA'
 }, {
     'Name': 'Chelsea Wilson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-9',
     'Year': 'So.',
     'NO': 7,
@@ -10472,7 +10472,7 @@ export default [{
     'id': 'nJzDuWafvyJUBjLZVTRd'
 }, {
     'Name': 'Chiara Gennari',
-    'Position': 'D/S',
+    'Position': 'OH/S',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 13,
@@ -10496,7 +10496,7 @@ export default [{
     'id': 'lLkQYfRvipInhcdLmpzt'
 }, {
     'Name': 'Chloe Anderson',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 2,
@@ -10504,7 +10504,7 @@ export default [{
     'id': 'HSTEbYmSxkPwmxWuUCMd'
 }, {
     'Name': 'Chloe Bryan',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-3',
     'Year': 'Jr.',
     'NO': 13,
@@ -10544,7 +10544,7 @@ export default [{
     'id': 'UPwincMKoxYJMhIaFUdY'
 }, {
     'Name': 'Chloe Dupuis',
-    'Position': 'OH/MH',
+    'Position': 'OH/MB',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 16,
@@ -10656,7 +10656,7 @@ export default [{
     'id': 'ldxsZAxVrCvYixdzmqdV'
 }, {
     'Name': 'Chloe Thomas',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 5,
@@ -10840,7 +10840,7 @@ export default [{
     'id': 'EAOoQJuFzACXAgcSAfFA'
 }, {
     'Name': 'Claire Campbell',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 15,
@@ -10976,7 +10976,7 @@ export default [{
     'id': 'ziiZtROYLhIVTUayJJZk'
 }, {
     'Name': 'Clara Bednarek',
-    'Position': 'MB/RSH',
+    'Position': 'MB/OPP',
     'Height': '6-1',
     'Year': 'Sr.',
     'NO': 14,
@@ -11128,7 +11128,7 @@ export default [{
     'id': 'WEgLgUuBXDemtTQqTSyU'
 }, {
     'Name': 'Cooper, Kara',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-3',
     'Year': 'Gr.',
     'NO': 1,
@@ -11336,7 +11336,7 @@ export default [{
     'id': 'KgslAEFrDLtMHtgHvOQc'
 }, {
     'Name': 'Cristal Paulino Rubel',
-    'Position': 'MH/OPP',
+    'Position': 'MB/OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 14,
@@ -11416,7 +11416,7 @@ export default [{
     'id': 'TQomKSPVVScwPYOoByOz'
 }, {
     'Name': 'Daija Jackson',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '5-11',
     'Year': 'Jr.',
     'NO': 2,
@@ -11784,7 +11784,7 @@ export default [{
     'id': 'vfbHBBfTpqlJhCIUApKp'
 }, {
     'Name': 'Delaney McSweeney',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-7',
     'Year': 'Sr.',
     'NO': 6,
@@ -11800,7 +11800,7 @@ export default [{
     'id': 'KbgpnoNHEQpVFCdKGiCM'
 }, {
     'Name': 'Delaney Rice',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-4',
     'Year': 'Sr.',
     'NO': 14,
@@ -11888,7 +11888,7 @@ export default [{
     'id': 'EIbYOWiMdUcpLKPjeaSR'
 }, {
     'Name': 'Derionah Abner',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-6',
     'Year': 'Sr.',
     'NO': 12,
@@ -11952,7 +11952,7 @@ export default [{
     'id': 'SnmMiTqMGeIpfAsFYqdJ'
 }, {
     'Name': 'Destiny Nelson',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '5-8',
     'Year': 'R-So.',
     'NO': 15,
@@ -11960,7 +11960,7 @@ export default [{
     'id': 'yABRExasTIDcqPitmmgS'
 }, {
     'Name': 'Destiny Thomas',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-9',
     'Year': 'R-Sr.',
     'NO': 10,
@@ -12000,7 +12000,7 @@ export default [{
     'id': 'lJkyArXarjxhNzeWYysW'
 }, {
     'Name': 'Devyn Robinson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 10,
@@ -12080,7 +12080,7 @@ export default [{
     'id': 'XNERQzQLFnmuBqCGDFiR'
 }, {
     'Name': 'Divine Muo',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'R-Fr.',
     'NO': '',
@@ -12088,7 +12088,7 @@ export default [{
     'id': 'FOIRsEKKXvuysWpqOoGp'
 }, {
     'Name': 'Doga Diraz',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': "6-3",
     'Year': 'Fr.',
     'NO': 18,
@@ -12176,7 +12176,7 @@ export default [{
     'id': 'fnzFAbLfVuNTQZLsoJHd'
 }, {
     'Name': 'Drew Wallech',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 7,
@@ -12360,7 +12360,7 @@ export default [{
     'id': 'lbENAfLUiRbKhVQvjPzf'
 }, {
     'Name': 'Eleftheria Baxa',
-    'Position': 'OH/RSH',
+    'Position': 'OH/OPP',
     'Height': '6-3',
     'Year': 'Fr.',
     'NO': 13,
@@ -12384,7 +12384,7 @@ export default [{
     'id': 'omsysgOovLkyipHvNdCN'
 }, {
     'Name': 'Elena Arnold',
-    'Position': 'RSH',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 1,
@@ -12480,7 +12480,7 @@ export default [{
     'id': 'hBcDsXjpTzTDFXdNVcyp'
 }, {
     'Name': 'Eli Adams',
-    'Position': 'RS/M',
+    'Position': 'OPP/M',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 7,
@@ -12656,7 +12656,7 @@ export default [{
     'id': 'DGZlMmdcpoRrdDrcnQgx'
 }, {
     'Name': 'Elise Porter',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 11,
@@ -12752,7 +12752,7 @@ export default [{
     'id': 'OATtMPVluBtYUBmpsiTH'
 }, {
     'Name': 'Elizabeth Helmich',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 9,
@@ -12840,7 +12840,7 @@ export default [{
     'id': 'fdJajAQfVhuCmcTCSCyn'
 }, {
     'Name': 'Elizabeth Ziegler',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 7,
@@ -13088,7 +13088,7 @@ export default [{
     'id': 'aazuhWOlRncuAvfxVYDK'
 }, {
     'Name': 'Ella Schomer',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 12,
@@ -13120,7 +13120,7 @@ export default [{
     'id': 'GQiDpLGLIypbKzyCTseM'
 }, {
     'Name': 'Ella Swansiger',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 14,
@@ -13360,7 +13360,7 @@ export default [{
     'id': 'uosDmFfnrIJtWdmHhjZu'
 }, {
     'Name': 'Ellie Bichelmeyer',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 10,
@@ -13392,7 +13392,7 @@ export default [{
     'id': 'yuyoipHemobnsWwMJHBP'
 }, {
     'Name': 'Ellie Echter',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-1',
     'Year': 'Redshirt So.',
     'NO': 16,
@@ -13688,7 +13688,7 @@ export default [{
     'id': 'pXPOTajxGujfpgDlHXip'
 }, {
     'Name': 'Emberlyn Reynolds',
-    'Position': 'MB/Right-Side',
+    'Position': 'MB/OPP',
     'Height': '-',
     'Year': 'Fr.',
     'NO': 12,
@@ -13720,7 +13720,7 @@ export default [{
     'id': 'xbVWjEClqlHaDBUopXsb'
 }, {
     'Name': 'Emerson Wilford',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 13,
@@ -13744,7 +13744,7 @@ export default [{
     'id': 'IwIecnJidPpKFTcFfaoA'
 }, {
     'Name': 'Emery Judkins',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': "6-0",
     'Year': 'Sr.',
     'NO': 16,
@@ -13840,7 +13840,7 @@ export default [{
     'id': 'jyIJTuxuoPSufijdkrde'
 }, {
     'Name': 'Emily Banitt',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Sr.',
     'NO': 10,
@@ -13856,7 +13856,7 @@ export default [{
     'id': 'WXaijoLmuYdBRIlDoTVv'
 }, {
     'Name': 'Emily Bourne',
-    'Position': 'OHOpposite',
+    'Position': 'OHOPP',
     'Height': "6-0",
     'Year': 'Jr.',
     'NO': 4,
@@ -13880,7 +13880,7 @@ export default [{
     'id': 'OUQEnXCsjIxeAZwLCGIg'
 }, {
     'Name': 'Emily Campe',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'R-So.',
     'NO': 5,
@@ -13904,7 +13904,7 @@ export default [{
     'id': 'JpkIliKrEcSkMwWBwDSP'
 }, {
     'Name': 'Emily Clausen',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 3,
@@ -14080,7 +14080,7 @@ export default [{
     'id': 'PQpXmugDGbDvPEyWzoSs'
 }, {
     'Name': 'Emily Merrick',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': "6-4",
     'Year': '',
     'NO': 23,
@@ -14424,7 +14424,7 @@ export default [{
     'id': 'GfEXzeOvpMwNvnVZJWkz'
 }, {
     'Name': 'Emma Gielas',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 9,
@@ -14680,7 +14680,7 @@ export default [{
     'id': 'yxEKClUQImNwhPfJskdS'
 }, {
     'Name': 'Emma Schurfranz',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': '5th',
     'NO': 16,
@@ -14808,7 +14808,7 @@ export default [{
     'id': 'xtCUJbzCCXtvHuqFXNSf'
 }, {
     'Name': 'Emma Winter',
-    'Position': 'RS/DS',
+    'Position': 'OPP/DS',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 7,
@@ -15064,7 +15064,7 @@ export default [{
     'id': 'XxyQKsPOOwSxFySlAnek'
 }, {
     'Name': 'Erin McInnes',
-    'Position': 'OHRight-Side',
+    'Position': 'OH/ight-Side',
     'Height': '-',
     'Year': 'Fr.',
     'NO': 17,
@@ -15144,7 +15144,7 @@ export default [{
     'id': 'PLwFWclbTNcMTRKNLoQs'
 }, {
     'Name': 'Esma Ajanovic',
-    'Position': 'RS/OPP',
+    'Position': 'OPP/OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 6,
@@ -15208,7 +15208,7 @@ export default [{
     'id': 'UwWBPLVhzuTRFMMxWwBE'
 }, {
     'Name': 'Eva Atkins',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 7,
@@ -15264,7 +15264,7 @@ export default [{
     'id': 'sWVziRYnqUfjatLTJWOn'
 }, {
     'Name': 'Evelyn Brenton',
-    'Position': 'MB/MH',
+    'Position': 'MB/MB',
     'Height': '6-2',
     'Year': 'R-Fr.',
     'NO': 15,
@@ -15296,7 +15296,7 @@ export default [{
     'id': 'tOCaLdUuYVAgiUwsIrcm'
 }, {
     'Name': 'Evie Duncan',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 16,
@@ -15424,7 +15424,7 @@ export default [{
     'id': 'RXiOuqPYLTykzaZWJCif'
 }, {
     'Name': 'Faith Atkins',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '5-10',
     'Year': 'So.',
     'NO': 11,
@@ -15512,7 +15512,7 @@ export default [{
     'id': 'xoHEjhnFsZakZhQaPxnR'
 }, {
     'Name': 'Fatima Samb',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 2,
@@ -15640,7 +15640,7 @@ export default [{
     'id': 'yWpnLhnFVrJoDLCJFdva'
 }, {
     'Name': 'Fran McBride',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'Sr.',
     'NO': 21,
@@ -15704,7 +15704,7 @@ export default [{
     'id': 'kxuogpbrvtSzUtRCxtRb'
 }, {
     'Name': 'Gabby Brissett',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '5-10',
     'Year': 'Fr.',
     'NO': 15,
@@ -15784,7 +15784,7 @@ export default [{
     'id': 'iVtFczpmUFzguIoyHXst'
 }, {
     'Name': 'Gabby Weihe',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '',
     'Year': 'Fr.',
     'NO': 10,
@@ -15848,7 +15848,7 @@ export default [{
     'id': 'zAzNSxgjQeDZvFuixHzo'
 }, {
     'Name': 'Gabriela Machin',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 16,
@@ -15888,7 +15888,7 @@ export default [{
     'id': 'aeRNBDeIppTtmevChIrK'
 }, {
     'Name': 'Gabrielle Arretche-Ramos',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-2',
     'Year': 'Jr.',
     'NO': 18,
@@ -16088,7 +16088,7 @@ export default [{
     'id': 'GhXFmtCfgioUNqNPaIwE'
 }, {
     'Name': 'Georgia Remmers',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 12,
@@ -16136,7 +16136,7 @@ export default [{
     'id': 'suNgboUECXAOfcfriKJw'
 }, {
     'Name': 'Gia Skenderi',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 23,
@@ -16184,7 +16184,7 @@ export default [{
     'id': 'YjtQdIcXhciAqznjdjqM'
 }, {
     'Name': 'Gigi Barr',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 8,
@@ -16304,7 +16304,7 @@ export default [{
     'id': 'LYUXqoEJtQyYkwAxdDWu'
 }, {
     'Name': 'Giulia Cardona',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Jr.',
     'NO': 12,
@@ -16400,7 +16400,7 @@ export default [{
     'id': 'nVdBLFLpzVXDtCOkGKfv'
 }, {
     'Name': 'Grace Brooker',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 1,
@@ -16568,7 +16568,7 @@ export default [{
     'id': 'uwCnwMSKsaRwwdQyQgsb'
 }, {
     'Name': 'Grace Melnick',
-    'Position': 'MH/RS',
+    'Position': 'MB/RS',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 18,
@@ -17096,7 +17096,7 @@ export default [{
     'id': 'tsQmZPKFSIwzfjuPLjDP'
 }, {
     'Name': 'Hailey Holland',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 29,
@@ -17240,7 +17240,7 @@ export default [{
     'id': 'USRxFNznrSyDMDuARVWI'
 }, {
     'Name': 'Haley Schroeder',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 27,
@@ -17288,7 +17288,7 @@ export default [{
     'id': 'aZxnmQsIxNVqeoJgsRmH'
 }, {
     'Name': 'Hallie Brown',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 13,
@@ -17448,7 +17448,7 @@ export default [{
     'id': 'NeRQHuMHAfctZpMlvwBp'
 }, {
     'Name': 'Hannah Brewer',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '5-10',
     'Year': 'Jr.',
     'NO': 2,
@@ -17640,7 +17640,7 @@ export default [{
     'id': 'zDZHooqAmQErDUzWwuTZ'
 }, {
     'Name': 'Hannah Platt',
-    'Position': 'Outside/OPP',
+    'Position': 'OH/OPP',
     'Height': '6-2',
     'Year': 'Jr.',
     'NO': 21,
@@ -17712,7 +17712,7 @@ export default [{
     'id': 'eWiPGdyjCwEUAOualLgV'
 }, {
     'Name': 'Hannah Shaw',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Fr.',
     'NO': 17,
@@ -17760,7 +17760,7 @@ export default [{
     'id': 'GffotNBKxgYRqmNbsGxK'
 }, {
     'Name': 'Hannah White',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'R-Fr.',
     'NO': 22,
@@ -18040,7 +18040,7 @@ export default [{
     'id': 'CufVUHSQojNxbaJkIPPW'
 }, {
     'Name': 'Hillarie Adams',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'So.',
     'NO': 8,
@@ -18088,7 +18088,7 @@ export default [{
     'id': 'bxFqEHBrEBLkPrNuGBOM'
 }, {
     'Name': 'Holly Eastridge',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': '',
     'NO': 18,
@@ -18168,7 +18168,7 @@ export default [{
     'id': 'OXMkYwnvZBaEzguvIsMo'
 }, {
     'Name': 'Hunter Thomas',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 18,
@@ -18280,7 +18280,7 @@ export default [{
     'id': 'vZfdDUoKVlEzFlbdpeOm'
 }, {
     'Name': 'India Bennett',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'R-Fr.',
     'NO': 18,
@@ -18464,7 +18464,7 @@ export default [{
     'id': 'jwJEyjEQqCOVLYhdOAGQ'
 }, {
     'Name': 'Isabel Bennett',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 5,
@@ -18672,7 +18672,7 @@ export default [{
     'id': 'bNzpIjWHnrHQEKQWgOiF'
 }, {
     'Name': 'Isabelle Percoco',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Gr.',
     'NO': 2,
@@ -18712,7 +18712,7 @@ export default [{
     'id': 'pcvdxBdplvQTUSXIiiTs'
 }, {
     'Name': 'Isis Williams',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'R-Sr.',
     'NO': 10,
@@ -18880,7 +18880,7 @@ export default [{
     'id': 'fWTlbkZYsZgbKTkTSYvx'
 }, {
     'Name': 'Izzy Clavenna',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 12,
@@ -18888,7 +18888,7 @@ export default [{
     'id': 'tOgYavvDyzKqvoHBbCCJ'
 }, {
     'Name': 'Izzy Durnell',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'R-So.',
     'NO': 23,
@@ -18904,7 +18904,7 @@ export default [{
     'id': 'sRgkwECsUGiaitgjTDvT'
 }, {
     'Name': 'Izzy Kronenberg',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': "6-0",
     'Year': '',
     'NO': 12,
@@ -18952,7 +18952,7 @@ export default [{
     'id': 'rYfGZMiOssdsfyTVHPUN'
 }, {
     'Name': 'Izzy Van De Wiele',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '',
     'Year': 'Fr.',
     'NO': 25,
@@ -19064,7 +19064,7 @@ export default [{
     'id': 'KqYIPTFGxNteZRhuBMOn'
 }, {
     'Name': 'Jacqlyn Caspers',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-5',
     'Year': 'Fifth Year',
     'NO': 14,
@@ -19080,7 +19080,7 @@ export default [{
     'id': 'FiwalSXuiHvmnEozutmU'
 }, {
     'Name': 'Jacqueline Arrington',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'Sr.',
     'NO': 23,
@@ -19088,7 +19088,7 @@ export default [{
     'id': 'jfByiedRRcgzxEgwHWFt'
 }, {
     'Name': 'Jacqueline Beville',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 12,
@@ -19096,7 +19096,7 @@ export default [{
     'id': 'hLKsZGjZWMRnQEKUGFwc'
 }, {
     'Name': 'Jacqueline Gomez-Gallegos',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Fr.',
     'NO': 21,
@@ -19240,7 +19240,7 @@ export default [{
     'id': 'HfqWueMhsOFUYkgEVyem'
 }, {
     'Name': 'Jade Demps',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 23,
@@ -19264,7 +19264,7 @@ export default [{
     'id': 'UQbxXEcgfWOBudTSIChN'
 }, {
     'Name': 'Jade Roth',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 6,
@@ -19440,7 +19440,7 @@ export default [{
     'id': 'slXRFhyrLiRadzKGKWrR'
 }, {
     'Name': 'Jailen Hurley',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 2,
@@ -19528,7 +19528,7 @@ export default [{
     'id': 'skvHyMCQheTHELxOwFzz'
 }, {
     'Name': 'Jamie Seward',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'So.',
     'NO': 8,
@@ -19672,7 +19672,7 @@ export default [{
     'id': 'iruuaHBHrvQUzmdUUZle'
 }, {
     'Name': 'Janiya Chapman',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'R-Jr.',
     'NO': 5,
@@ -19864,7 +19864,7 @@ export default [{
     'id': 'BlYvmGNCnrXHojrxInbQ'
 }, {
     'Name': 'Jay Collins',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': "6-2",
     'Year': '',
     'NO': 18,
@@ -19944,7 +19944,7 @@ export default [{
     'id': 'lTLcEfgseSiwEZBhXHKK'
 }, {
     'Name': 'Jayde Shelton',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 13,
@@ -20144,7 +20144,7 @@ export default [{
     'id': 'SpEdPrvoDcojZgqeUSfg'
 }, {
     'Name': 'Jenna Forster',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 2,
@@ -20280,7 +20280,7 @@ export default [{
     'id': 'LvhWpGviZukIIDnBQxEA'
 }, {
     'Name': 'Jennings Hall',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Jr.',
     'NO': 10,
@@ -20344,7 +20344,7 @@ export default [{
     'id': 'VDqFUTbaoBSLsUOcEqiX'
 }, {
     'Name': 'Jess Perry',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 3,
@@ -20456,7 +20456,7 @@ export default [{
     'id': 'fezOBAepWStkFkcuHyoB'
 }, {
     'Name': 'Jessica Pickett',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-6',
     'Year': 'Fr.',
     'NO': 27,
@@ -20672,7 +20672,7 @@ export default [{
     'id': 'oqbsJkKlvaPDDIonQswo'
 }, {
     'Name': 'Jodorrian Taylor',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Gr.',
     'NO': 15,
@@ -20736,7 +20736,7 @@ export default [{
     'id': 'bYEsyIJrHBmUZOvZtsnq'
 }, {
     'Name': 'Jorda Crook',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': "6-0",
     'Year': '',
     'NO': 2,
@@ -20784,7 +20784,7 @@ export default [{
     'id': 'YEXSdajypjHrSMBKJWFN'
 }, {
     'Name': 'Jordan Christy',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 5,
@@ -20864,7 +20864,7 @@ export default [{
     'id': 'NrkVTzNMMbAKPBcqcTeI'
 }, {
     'Name': 'Jordan Iliff',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Jr.',
     'NO': 4,
@@ -21400,7 +21400,7 @@ export default [{
     'id': 'opMLGzRNbbzFowmDmGro'
 }, {
     'Name': 'Julia Hanson',
-    'Position': 'Outside/Opposite',
+    'Position': 'OH/OPP',
     'Height': "6-1",
     'Year': '',
     'NO': 22,
@@ -21536,7 +21536,7 @@ export default [{
     'id': 'YkaTPmCNqnNKxzanddPH'
 }, {
     'Name': 'Julia Shepherd',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'R-Fr.',
     'NO': 12,
@@ -22008,7 +22008,7 @@ export default [{
     'id': 'fnTmgwOOtPNgDgNUIvZX'
 }, {
     'Name': 'Kaitlin Espiritu',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '5-10',
     'Year': 'Sr.',
     'NO': 22,
@@ -22600,7 +22600,7 @@ export default [{
     'id': 'ZLDRdsTOJUQpolllbEkO'
 }, {
     'Name': 'Karagan Coggin',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '6-2',
     'Year': '',
     'NO': 3,
@@ -22912,7 +22912,7 @@ export default [{
     'id': 'DfZoQqGKgSWTRZcSEnxq'
 }, {
     'Name': 'Kat Betancourt',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 4,
@@ -23072,7 +23072,7 @@ export default [{
     'id': 'mbdCEKNJmmRFnWOpDRFy'
 }, {
     'Name': 'Kate Idrogo',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Jr.',
     'NO': 2,
@@ -23168,7 +23168,7 @@ export default [{
     'id': 'JihJfqButRQSjVLdjuCb'
 }, {
     'Name': 'Kate Sheire',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Sr.',
     'NO': 10,
@@ -23216,7 +23216,7 @@ export default [{
     'id': 'BOkuOopMsmMGwGFZRUXW'
 }, {
     'Name': 'Kate White',
-    'Position': 'RS/DS',
+    'Position': 'OPP/DS',
     'Height': '5-10',
     'Year': 'Fr.',
     'NO': 5,
@@ -23320,7 +23320,7 @@ export default [{
     'id': 'hPnRMDCiMumLgxVwjmBr'
 }, {
     'Name': 'Katherine Arnason',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '-',
     'Year': 'Fr.',
     'NO': 18,
@@ -23472,7 +23472,7 @@ export default [{
     'id': 'GerDEinStBvVfnSinNhb'
 }, {
     'Name': 'Katie Dalton',
-    'Position': 'S/Opposite',
+    'Position': 'S/OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 7,
@@ -23528,7 +23528,7 @@ export default [{
     'id': 'PPmwtCJydMXHgaMZSYvC'
 }, {
     'Name': 'Katie Hurta',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Redshirt Fr.',
     'NO': 25,
@@ -23608,7 +23608,7 @@ export default [{
     'id': 'FqMIcIxdxMggLuiMWLaP'
 }, {
     'Name': 'Katie Powers',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Fr.',
     'NO': 6,
@@ -23648,7 +23648,7 @@ export default [{
     'id': 'qrktEbUghFTSDeyLOKbb'
 }, {
     'Name': 'Katie Swensen',
-    'Position': 'Opposite Side Hitter',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': '',
     'NO': 9,
@@ -23728,7 +23728,7 @@ export default [{
     'id': 'lUlUvefUzvVtJWRRDRKe'
 }, {
     'Name': 'Katy Riviere',
-    'Position': 'RSH',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 18,
@@ -23936,7 +23936,7 @@ export default [{
     'id': 'RXyvAppPooZsxyiMujHr'
 }, {
     'Name': 'Kayla Henley',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Gr.',
     'NO': 5,
@@ -23952,7 +23952,7 @@ export default [{
     'id': 'cNcqCdMjOqEfVfaJCdvh'
 }, {
     'Name': 'Kayla Jones',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-2',
     'Year': 'Fr.',
     'NO': 8,
@@ -23992,7 +23992,7 @@ export default [{
     'id': 'MznfUtbSoxXvaAEwejlf'
 }, {
     'Name': 'Kayla McDuffie',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '5-10',
     'Year': 'Jr.',
     'NO': 19,
@@ -24248,7 +24248,7 @@ export default [{
     'id': 'dImpeijplFmzvyabfEut'
 }, {
     'Name': 'Keira Beverly',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 13,
@@ -24304,7 +24304,7 @@ export default [{
     'id': 'ymquvtIhtOoJPARPWzlZ'
 }, {
     'Name': 'Kelle Anwander',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-4',
     'Year': 'Jr.',
     'NO': 14,
@@ -24392,7 +24392,7 @@ export default [{
     'id': 'nPkWPnJIkKxWQkPKNkBX'
 }, {
     'Name': 'Kelsey Holmes',
-    'Position': 'RS/S',
+    'Position': 'OPP/S',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 3,
@@ -24464,7 +24464,7 @@ export default [{
     'id': 'PCJfUhnolOHkTWtIenah'
 }, {
     'Name': 'Kenadee Coyle',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '',
     'Year': 'Jr.',
     'NO': 33,
@@ -24584,7 +24584,7 @@ export default [{
     'id': 'AbQYBTsLuLFfbXehOjqT'
 }, {
     'Name': 'Kendall Kipp',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': '6-5',
     'Year': '5th',
     'NO': 10,
@@ -24872,7 +24872,7 @@ export default [{
     'id': 'dKmqYnaGmUImSzhuvMoJ'
 }, {
     'Name': 'Kennedy Arp',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 26,
@@ -24944,7 +24944,7 @@ export default [{
     'id': 'CqOFEtDKeZYuIHXNPgnI'
 }, {
     'Name': 'Kennedy Lauck',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 17,
@@ -24976,7 +24976,7 @@ export default [{
     'id': 'WNOeNdqVJrnSRzmQRqWx'
 }, {
     'Name': 'Kennedy Muckelroy',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Gr.',
     'NO': 6,
@@ -25080,7 +25080,7 @@ export default [{
     'id': 'sdrQBHluhgOnOOiWAQLb'
 }, {
     'Name': 'Kennedy Wagner',
-    'Position': 'Outside',
+    'Position': 'OH',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 2,
@@ -25232,7 +25232,7 @@ export default [{
     'id': 'gchhzXMFQAzLafMCaPNO'
 }, {
     'Name': 'Kharys Grice',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-9',
     'Year': 'So.',
     'NO': 16,
@@ -25320,7 +25320,7 @@ export default [{
     'id': 'LomEVaGPXhJYzxLgEwdy'
 }, {
     'Name': 'Kibi Huggins',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '5-10',
     'Year': 'Jr.',
     'NO': 5,
@@ -25400,7 +25400,7 @@ export default [{
     'id': 'jbbttGettKYQPJMvCzIS'
 }, {
     'Name': 'Kimani Johnson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'Fr.',
     'NO': 20,
@@ -25408,7 +25408,7 @@ export default [{
     'id': 'JyRTjPEdBhaXeySXxaKR'
 }, {
     'Name': 'Kimani Johnson',
-    'Position': 'RS/MH',
+    'Position': 'OPP/MB',
     'Height': '6-3',
     'Year': 'So.',
     'NO': 7,
@@ -25416,7 +25416,7 @@ export default [{
     'id': 'orYdsKrpnPWDDmbTGKjy'
 }, {
     'Name': 'Kimari Terrell',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Sr.',
     'NO': 22,
@@ -25432,7 +25432,7 @@ export default [{
     'id': 'HZQxyxRTITRqeewGWduz'
 }, {
     'Name': 'Kimi Waller',
-    'Position': 'RS/S',
+    'Position': 'OPP/S',
     'Height': '5-10',
     'Year': 'Fr.',
     'NO': 13,
@@ -25616,7 +25616,7 @@ export default [{
     'id': 'mdMuYVCUAdHmRiltfiuu'
 }, {
     'Name': 'Kiyah Franklin',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 24,
@@ -25728,7 +25728,7 @@ export default [{
     'id': 'bahlJrVQnlpnWLfklAMK'
 }, {
     'Name': 'Krista Blakely',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': "6-0",
     'Year': 'Gr.',
     'NO': 21,
@@ -25736,7 +25736,7 @@ export default [{
     'id': 'nKvncoEaXtQhJzdFLmZp'
 }, {
     'Name': 'Krista Dooley',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'Fr.',
     'NO': 7,
@@ -25944,7 +25944,7 @@ export default [{
     'id': 'xghmTahutZTJVXshvvZD'
 }, {
     'Name': 'Kylee Eze',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Fy.',
     'NO': 25,
@@ -26264,7 +26264,7 @@ export default [{
     'id': 'IWZVNENQdqppFuUmXNkE'
 }, {
     'Name': 'Laila Glover',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Fr.',
     'NO': 17,
@@ -26296,7 +26296,7 @@ export default [{
     'id': 'LvMiFhxQWSYJQqzjcjvi'
 }, {
     'Name': 'Laila Ricks',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Sr.',
     'NO': 6,
@@ -26560,7 +26560,7 @@ export default [{
     'id': 'GHtJBGHZHkaHrjlaUegU'
 }, {
     'Name': 'Laura Fischer',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '6-3',
     'Year': '',
     'NO': 18,
@@ -26720,7 +26720,7 @@ export default [{
     'id': 'ojvQZgdiWouIlljTkhHu'
 }, {
     'Name': 'Lauren Crowl',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': "6-4",
     'Year': '',
     'NO': 4,
@@ -26848,7 +26848,7 @@ export default [{
     'id': 'PpkXSoDothkQFHDYXZwJ'
 }, {
     'Name': 'Lauren Kellen',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fy.',
     'NO': 7,
@@ -27496,7 +27496,7 @@ export default [{
     'id': 'qvamuuJdnHtuwcCtCfPz'
 }, {
     'Name': 'Leila Smalls',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-9',
     'Year': 'So.',
     'NO': 11,
@@ -27576,7 +27576,7 @@ export default [{
     'id': 'ujHPLIkyxsPKuZfXOFmL'
 }, {
     'Name': 'Leslie Warren',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 16,
@@ -28000,7 +28000,7 @@ export default [{
     'id': 'ImqAiqNNbHKiNwSqgoUG'
 }, {
     'Name': 'Lillie Simons',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 21,
@@ -28080,7 +28080,7 @@ export default [{
     'id': 'bxJChhkIsLKeaPgHKKej'
 }, {
     'Name': 'Lily Barker',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 2,
@@ -28272,7 +28272,7 @@ export default [{
     'id': 'QhADGOwbXqACEpfiyAqB'
 }, {
     'Name': 'Lindsay Lahr',
-    'Position': 'Outside/RS Hitter',
+    'Position': 'OH/RS Hitter',
     'Height': '6-1',
     'Year': 'Sr.',
     'NO': 5,
@@ -28304,7 +28304,7 @@ export default [{
     'id': 'SYMEXFdRCmTOjOcBVZAc'
 }, {
     'Name': 'Lindsey Cross',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'So.',
     'NO': 4,
@@ -28392,7 +28392,7 @@ export default [{
     'id': 'MhWAPGTnBcqzDGePYYuP'
 }, {
     'Name': 'Liselotte Spoormakers',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Gr.',
     'NO': 3,
@@ -28424,7 +28424,7 @@ export default [{
     'id': 'hLPjcMhyETnyUoKRFbjX'
 }, {
     'Name': 'Livi Weidmann',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Sr.',
     'NO': 16,
@@ -28536,7 +28536,7 @@ export default [{
     'id': 'mVBdPaHngJpWELDABBzg'
 }, {
     'Name': 'Logan Grevengoed',
-    'Position': 'OH/MH',
+    'Position': 'OH/MB',
     'Height': '',
     'Year': 'So.',
     'NO': 31,
@@ -28656,7 +28656,7 @@ export default [{
     'id': 'LkqQiIYDuDRJDnpkrOXB'
 }, {
     'Name': 'London Davis',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 21,
@@ -28968,7 +28968,7 @@ export default [{
     'id': 'NiExYNskfQLWbbrivgFC'
 }, {
     'Name': 'Lydia Adam',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Gr.',
     'NO': 8,
@@ -28992,7 +28992,7 @@ export default [{
     'id': 'nSwehaarJVmTPyOandni'
 }, {
     'Name': 'Lydia Grote',
-    'Position': 'Outside/Opposite',
+    'Position': 'OH/OPP',
     'Height': "6-2",
     'Year': '',
     'NO': 9,
@@ -29144,7 +29144,7 @@ export default [{
     'id': 'dycSloFUjdbTPRxDiqzz'
 }, {
     'Name': 'MJ Klaumann',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '6-4',
     'Year': 'So.',
     'NO': 4,
@@ -29152,7 +29152,7 @@ export default [{
     'id': 'UlEoSmCEswjbxIOtVXhg'
 }, {
     'Name': 'MaKenzie Chambers',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Gr.',
     'NO': 19,
@@ -29208,7 +29208,7 @@ export default [{
     'id': 'ifPCKsqAFfkmauQhxKtE'
 }, {
     'Name': 'MacKenzy Ruggiero',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 19,
@@ -29448,7 +29448,7 @@ export default [{
     'id': 'fkOkKUCquFFFNWDtOcYq'
 }, {
     'Name': 'Mackenzie Vernon',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 15,
@@ -29464,7 +29464,7 @@ export default [{
     'id': 'zvWEHrTkpbPahDHdkIiX'
 }, {
     'Name': 'Mackenzie Yoakum',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '',
     'Year': 'So.',
     'NO': 8,
@@ -29544,7 +29544,7 @@ export default [{
     'id': 'XjEJUvGtONxKxyREYmss'
 }, {
     'Name': 'Macy Van Den Elzen',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'Sr.',
     'NO': 7,
@@ -29552,7 +29552,7 @@ export default [{
     'id': 'AzIBLJxoGrYOlhtYyCzV'
 }, {
     'Name': 'Mad Wilson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-4',
     'Year': 'Jr.',
     'NO': 22,
@@ -29680,7 +29680,7 @@ export default [{
     'id': 'emwJrgIqMuyztoNeWMqM'
 }, {
     'Name': 'Maddie Lipetzky',
-    'Position': 'MH/MB',
+    'Position': 'MB/MB',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 5,
@@ -29704,7 +29704,7 @@ export default [{
     'id': 'FvGybjdVrdegatNIUOwK'
 }, {
     'Name': 'Maddie Moan',
-    'Position': 'MH/RS',
+    'Position': 'MB/RS',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 24,
@@ -29808,7 +29808,7 @@ export default [{
     'id': 'OdgvqboBeyKgImxUlRsd'
 }, {
     'Name': 'Maddie Wiersema',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 9,
@@ -29872,7 +29872,7 @@ export default [{
     'id': 'EJvKMuEOlBzQcpCRxUDj'
 }, {
     'Name': 'Maddy Hanson',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 20,
@@ -29944,7 +29944,7 @@ export default [{
     'id': 'HTUYaRCiBmtfyyhpJhrL'
 }, {
     'Name': 'Madeline Villarreal',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 12,
@@ -30336,7 +30336,7 @@ export default [{
     'id': 'TrRWIiGTJMcTeqZGIulx'
 }, {
     'Name': 'Madison Loiselle',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '',
     'Year': 'Fr.',
     'NO': 14,
@@ -30424,7 +30424,7 @@ export default [{
     'id': 'omqngRULUMoTzsCzajdj'
 }, {
     'Name': 'Madison Rice-Locket',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'So.',
     'NO': 7,
@@ -31112,7 +31112,7 @@ export default [{
     'id': 'zfpWbAwDIljPyTxQhgvs'
 }, {
     'Name': 'Makenzie Washington',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-9',
     'Year': 'Fr.',
     'NO': 13,
@@ -31128,7 +31128,7 @@ export default [{
     'id': 'RGnBjZafxQPKSUHwMbhV'
 }, {
     'Name': 'Makinsey Jones',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 6,
@@ -31208,7 +31208,7 @@ export default [{
     'id': 'bMhEZOCwZvlGzuyPxxEu'
 }, {
     'Name': 'Mallory Januski',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 8,
@@ -31248,7 +31248,7 @@ export default [{
     'id': 'dlQSmmUKVzlWKaPzqthz'
 }, {
     'Name': 'Mamie Krubally',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Fr.',
     'NO': 1,
@@ -31360,7 +31360,7 @@ export default [{
     'id': 'xDURWyIgZzLeFtLNpQgT'
 }, {
     'Name': 'Margo Huff',
-    'Position': 'MH/OH',
+    'Position': 'MB/OH',
     'Height': '6-2',
     'Year': 'Jr.',
     'NO': 8,
@@ -31616,7 +31616,7 @@ export default [{
     'id': 'DKZMNxjKyDqgqpAbugkV'
 }, {
     'Name': 'Marin Freeland',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Fr.',
     'NO': '',
@@ -31648,7 +31648,7 @@ export default [{
     'id': 'wTRCEdyxIBFUqAfjkYzk'
 }, {
     'Name': 'Marisa Armer',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 24,
@@ -31824,7 +31824,7 @@ export default [{
     'id': 'VzKHZPtExLnVuoKQZEIL'
 }, {
     'Name': 'Mary Smith',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'So.',
     'NO': 11,
@@ -32048,7 +32048,7 @@ export default [{
     'id': 'uFUwLSsIAnTiaXFAXayZ'
 }, {
     'Name': 'Maycie Welborn',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'Jr.',
     'NO': 7,
@@ -32136,7 +32136,7 @@ export default [{
     'id': 'ESjOUKUpRrKRKqogWQNK'
 }, {
     'Name': 'McKenna Reiswig',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-4',
     'Year': 'Sr.',
     'NO': 8,
@@ -32256,7 +32256,7 @@ export default [{
     'id': 'HZbyuAGQqIfNpsKYkhxw'
 }, {
     'Name': 'Mckenna Wucherer',
-    'Position': 'Outside',
+    'Position': 'OH',
     'Height': "6-1",
     'Year': '',
     'NO': 3,
@@ -32464,7 +32464,7 @@ export default [{
     'id': 'HpOIvmXIExgQcypWikWS'
 }, {
     'Name': 'Megan Sheridan',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': "6-1",
     'Year': 'Gr.',
     'NO': 21,
@@ -32568,7 +32568,7 @@ export default [{
     'id': 'DdJGbdZNJKdktDHcWUuY'
 }, {
     'Name': 'Meghan Dombrowski',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 3,
@@ -32752,7 +32752,7 @@ export default [{
     'id': 'gZyxNojkrpRKTsWUzwcg'
 }, {
     'Name': 'Melisa Ilter',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '',
     'Year': 'So.',
     'NO': 9,
@@ -32808,7 +32808,7 @@ export default [{
     'id': 'pYyTRirGkNcxvplBRFMp'
 }, {
     'Name': 'Meredith Hohnbaum',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 16,
@@ -32896,7 +32896,7 @@ export default [{
     'id': 'rPYZdhXOrAUuXTtWVgpq'
 }, {
     'Name': 'Mia  Lombardo',
-    'Position': 'RS/OPP',
+    'Position': 'OPP/OPP',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 3,
@@ -32944,7 +32944,7 @@ export default [{
     'id': 'HcFRoWzmZEuXGwdlVkIu'
 }, {
     'Name': 'Mia Fearnley',
-    'Position': 'Outside/OPP',
+    'Position': 'OH/OPP',
     'Height': '5-10',
     'Year': 'Fr.',
     'NO': 2,
@@ -33008,7 +33008,7 @@ export default [{
     'id': 'oofOwQAbBAdyJgRTRPQY'
 }, {
     'Name': 'Mia Moore',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 22,
@@ -33024,7 +33024,7 @@ export default [{
     'id': 'FNhWbTOKiDFWNMkwFUbT'
 }, {
     'Name': 'Mia Otten',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 13,
@@ -33200,7 +33200,7 @@ export default [{
     'id': 'GVyJKNCRttKsBgRGdtNZ'
 }, {
     'Name': 'Michelle Fredrick',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 22,
@@ -33320,7 +33320,7 @@ export default [{
     'id': 'vvGppaMyNIvsCtyTdPpj'
 }, {
     'Name': 'Mikayla Powell',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Gr.',
     'NO': 26,
@@ -33432,7 +33432,7 @@ export default [{
     'id': 'uadKZeINFjWMiGbbykxJ'
 }, {
     'Name': 'Millie Loehr',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-5',
     'Year': 'Sr.',
     'NO': 15,
@@ -33464,7 +33464,7 @@ export default [{
     'id': 'pqAGuHFSGGEwEzzjxVFC'
 }, {
     'Name': 'Minnie Purcell',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 18,
@@ -33520,7 +33520,7 @@ export default [{
     'id': 'MbGrYMoybbTmXYlCXoKT'
 }, {
     'Name': 'Miranda Putnicki',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-4',
     'Year': 'Fr.',
     'NO': 13,
@@ -33528,7 +33528,7 @@ export default [{
     'id': 'TjrcmRzdUCdMCgVNCfZQ'
 }, {
     'Name': 'Miranda Strongman',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': '5th',
     'NO': 12,
@@ -33816,7 +33816,7 @@ export default [{
     'id': 'asunklGIiXmxpfMYETys'
 }, {
     'Name': 'Morgahn Fingall',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Gr.',
     'NO': 7,
@@ -34024,7 +34024,7 @@ export default [{
     'id': 'fpXJpXvAVVTTtoJacsfm'
 }, {
     'Name': 'Morgan Munro',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'So.',
     'NO': 4,
@@ -34200,7 +34200,7 @@ export default [{
     'id': 'iroWZTmfbWaEcHtNdJhO'
 }, {
     'Name': 'Mya Wilson',
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': "6-1",
     'Year': 'Sr.',
     'NO': 7,
@@ -34264,7 +34264,7 @@ export default [{
     'id': 'MipCQpMMjRWQaavBizVy'
 }, {
     'Name': 'Nadia Goich',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 26,
@@ -34400,7 +34400,7 @@ export default [{
     'id': 'ZvqztRWsniJluHsBfmTq'
 }, {
     'Name': 'Naomi Franco',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': 'Sr.',
     'NO': 17,
@@ -34520,7 +34520,7 @@ export default [{
     'id': 'KkJixjGgWSWqVaXqlFnX'
 }, {
     'Name': 'Natalie Luscomb',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fy.',
     'NO': 21,
@@ -34848,7 +34848,7 @@ export default [{
     'id': 'PYHVcpjduPYXnZrvzQhk'
 }, {
     'Name': 'Nicanora Clarke',
-    'Position': 'Outside/OPP',
+    'Position': 'OH/OPP',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 6,
@@ -35344,7 +35344,7 @@ export default [{
     'id': 'cgaLujCnxrWopRBNqauc'
 }, {
     'Name': 'Olga Sawinska',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Jr.',
     'NO': 9,
@@ -35384,7 +35384,7 @@ export default [{
     'id': 'jsCIVFuDthcHdsVfWzoP'
 }, {
     'Name': 'Olivia Babcock',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-5',
     'Year': 'Fr.',
     'NO': 5,
@@ -35400,7 +35400,7 @@ export default [{
     'id': 'yfhfhMVOCuwqxcMqTHAx'
 }, {
     'Name': 'Olivia Blackketter',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 9,
@@ -35744,7 +35744,7 @@ export default [{
     'id': 'skDUGTvkMmfBDUNIJklx'
 }, {
     'Name': 'Olyvia Kennedy',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': '',
     'NO': 22,
@@ -35760,7 +35760,7 @@ export default [{
     'id': 'hhKLBAyWWojOVfotFYru'
 }, {
     'Name': 'Onuchi Ndee',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'Sr.',
     'NO': 5,
@@ -35800,7 +35800,7 @@ export default [{
     'id': 'lgIokYXrIEOvqibcBrpU'
 }, {
     'Name': 'Ovalle, Marian',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Sr.',
     'NO': 18,
@@ -36088,7 +36088,7 @@ export default [{
     'id': 'PyJGUgMRLzSHUHlwKDjO'
 }, {
     'Name': 'Paris Downing',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '5-9',
     'Year': 'Jr.',
     'NO': 1,
@@ -36232,7 +36232,7 @@ export default [{
     'id': 'xebWARdZlLmVkIvHddOB'
 }, {
     'Name': 'Payton Lee',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-4',
     'Year': 'Fr.',
     'NO': 17,
@@ -36288,7 +36288,7 @@ export default [{
     'id': 'VIcronabvFDNjvYSccRW'
 }, {
     'Name': 'Penelope Vertin',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-6',
     'Year': 'So.',
     'NO': 12,
@@ -36336,7 +36336,7 @@ export default [{
     'id': 'QxLDSaMUcXMXyFeZbWSK'
 }, {
     'Name': 'Perry Flannigan',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Jr.',
     'NO': 11,
@@ -36472,7 +36472,7 @@ export default [{
     'id': 'sToBIGcmQNGUKIVThIJE'
 }, {
     'Name': 'Peyton Wilhite',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-4',
     'Year': 'Gr.',
     'NO': 6,
@@ -36584,7 +36584,7 @@ export default [{
     'id': 'eviJrlxzXHSadrXOAvOJ'
 }, {
     'Name': 'Presley Nippert',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Fr.',
     'NO': 1,
@@ -36896,7 +36896,7 @@ export default [{
     'id': 'VphNqbkctAMGvPIZkeQP'
 }, {
     'Name': 'Rachel Scott',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'So.',
     'NO': 16,
@@ -37128,7 +37128,7 @@ export default [{
     'id': 'smIaEMmzRbpdSouFAKdR'
 }, {
     'Name': 'Reagan Cooper',
-    'Position': 'Outside/Opposite',
+    'Position': 'OH/OPP',
     'Height': '6-2',
     'Year': 'Graduate',
     'NO': 8,
@@ -37200,7 +37200,7 @@ export default [{
     'id': 'QMEiGUXNcrRUCImloNCZ'
 }, {
     'Name': 'Reagin Williams',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-9',
     'Year': 'Jr.',
     'NO': 10,
@@ -37296,7 +37296,7 @@ export default [{
     'id': 'duJjNniraKBIIEyjLimk'
 }, {
     'Name': 'Reese Miller',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 20,
@@ -37328,7 +37328,7 @@ export default [{
     'id': 'ypxkJCgoRXMEhtkbGJZv'
 }, {
     'Name': 'Reese Watters',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 16,
@@ -37384,7 +37384,7 @@ export default [{
     'id': 'jElLOReKQRaYCVuldhUs'
 }, {
     'Name': 'Reilly Briggs',
-    'Position': 'RSH',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Gr.',
     'NO': 8,
@@ -37696,7 +37696,7 @@ export default [{
     'id': 'nCBxrqJwuutbyGBYZGWU'
 }, {
     'Name': 'Robin Rosser',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 15,
@@ -37768,7 +37768,7 @@ export default [{
     'id': 'FCCWeeCaMyimrFbkCdgU'
 }, {
     'Name': 'Rosa Vesty',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'Fr.',
     'NO': 22,
@@ -37880,7 +37880,7 @@ export default [{
     'id': 'vrbeMiemqeiLTAnuRleU'
 }, {
     'Name': 'Ruth Kayongo',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 13,
@@ -38176,7 +38176,7 @@ export default [{
     'id': 'QTkLYbjKhGSbkXulCcxT'
 }, {
     'Name': "Sa'Myah Ford",
-    'Position': 'RS/MB',
+    'Position': 'OPP/MB',
     'Height': '6-0',
     'Year': 'Fr.',
     'NO': 7,
@@ -38224,7 +38224,7 @@ export default [{
     'id': 'khSgHKSiTsYrvPLEKolP'
 }, {
     'Name': 'Sadie Bacon',
-    'Position': 'MB/Right-Side',
+    'Position': 'MB/OPP',
     'Height': '6-2',
     'Year': 'Jr.',
     'NO': 27,
@@ -38432,7 +38432,7 @@ export default [{
     'id': 'PDaqGQXdcBFdVQwmCHlh'
 }, {
     'Name': 'Sam Warren',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'R-So.',
     'NO': 22,
@@ -38616,7 +38616,7 @@ export default [{
     'id': 'IRbMLdehktohIFupYABk'
 }, {
     'Name': 'Samia Bhakta',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 16,
@@ -38912,7 +38912,7 @@ export default [{
     'id': 'myKRAearHiDWHGcmJrSl'
 }, {
     'Name': 'Sarah MacLean',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 3,
@@ -39168,7 +39168,7 @@ export default [{
     'id': 'jlMfiWNggWRgUlcdXBFE'
 }, {
     'Name': 'Savanah Johnson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': "5-9",
     'Year': 'So.',
     'NO': 1,
@@ -39248,7 +39248,7 @@ export default [{
     'id': 'vMlbXtCIIFaBfCaHOYxa'
 }, {
     'Name': 'Savannah Page',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 6,
@@ -39400,7 +39400,7 @@ export default [{
     'id': 'KvKALleyDATawSGsawDm'
 }, {
     'Name': 'Semira Fields',
-    'Position': 'Outside',
+    'Position': 'OH',
     'Height': '5-10',
     'Year': '',
     'NO': '',
@@ -39528,7 +39528,7 @@ export default [{
     'id': 'mPboxlDZEZvLxfKlQUfS'
 }, {
     'Name': 'Shannon Keck',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '',
     'Year': 'Sr.',
     'NO': 13,
@@ -39624,7 +39624,7 @@ export default [{
     'id': 'nHqHYpQmuRFihAajGboA'
 }, {
     'Name': 'Shea Dupuis',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 7,
@@ -40040,7 +40040,7 @@ export default [{
     'id': 'NjnofefMWWroBjzAXSoI'
 }, {
     'Name': 'Skye Ekes',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': "6-1",
     'Year': 'Jr.',
     'NO': 1,
@@ -40224,7 +40224,7 @@ export default [{
     'id': 'VhkXSBnJvCWOPDwkGREM'
 }, {
     'Name': 'Sofia Lindemann',
-    'Position': 'MB/Right-Side',
+    'Position': 'MB/OPP',
     'Height': '-',
     'Year': 'Fr.',
     'NO': 4,
@@ -40304,7 +40304,7 @@ export default [{
     'id': 'APdVEtsNQJwAfqbherUT'
 }, {
     'Name': 'Sonja Meyer',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 15,
@@ -40384,7 +40384,7 @@ export default [{
     'id': 'vWcFExNzbPjhUxgAaBmD'
 }, {
     'Name': 'Sophia Garrido',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'R-Fr.',
     'NO': 12,
@@ -40408,7 +40408,7 @@ export default [{
     'id': 'SWTJDGszIdycIFrIMgVc'
 }, {
     'Name': 'Sophia Henderson',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-2',
     'Year': 'Fr.',
     'NO': 21,
@@ -40592,7 +40592,7 @@ export default [{
     'id': 'OsVYeNjfwjhNjjNvpJQh'
 }, {
     'Name': 'Sophie Catalano',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'So.',
     'NO': 20,
@@ -40808,7 +40808,7 @@ export default [{
     'id': 'iXdAsDjITSlzTszGAoOA'
 }, {
     'Name': 'Stephanie Gatto',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Sr.',
     'NO': 6,
@@ -41008,7 +41008,7 @@ export default [{
     'id': 'walRhygrAErMxCmGSyGR'
 }, {
     'Name': 'Sydney Conley',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': "6-1",
     'Year': 'Sr.',
     'NO': 15,
@@ -41088,7 +41088,7 @@ export default [{
     'id': 'UPnTfSimTcbGcAXakJfj'
 }, {
     'Name': 'Sydney Green',
-    'Position': 'Opposite',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'Jr.',
     'NO': 18,
@@ -41096,7 +41096,7 @@ export default [{
     'id': 'UUtIpqRTtdaEXjjJSmTC'
 }, {
     'Name': 'Sydney Green',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-10',
     'Year': 'So.',
     'NO': 13,
@@ -41240,7 +41240,7 @@ export default [{
     'id': 'PslkHtITSFkregVchAxj'
 }, {
     'Name': 'Sydney Morris',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Sr.',
     'NO': 19,
@@ -41280,7 +41280,7 @@ export default [{
     'id': 'WfrYirfovoZJwTVnePKq'
 }, {
     'Name': 'Sydney Petersen',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Gr.',
     'NO': 20,
@@ -41320,7 +41320,7 @@ export default [{
     'id': 'UTlcFUPtxYCBXJDRcNPg'
 }, {
     'Name': 'Sydney Schnichels',
-    'Position': 'Outside/Opposite',
+    'Position': 'OH/OPP',
     'Height': "6-4",
     'Year': '',
     'NO': 2,
@@ -41336,7 +41336,7 @@ export default [{
     'id': 'xZlBmIPPhqysEcpinojw'
 }, {
     'Name': 'Sydney Stenson',
-    'Position': 'RS/OH',
+    'Position': 'OPP/OH',
     'Height': '5-11',
     'Year': 'Fr.',
     'NO': 1,
@@ -41360,7 +41360,7 @@ export default [{
     'id': 'GDHlmxposvwjvfkHHsJH'
 }, {
     'Name': 'Sydney Tanner',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Sr.',
     'NO': 11,
@@ -41584,7 +41584,7 @@ export default [{
     'id': 'ZsKWPYtXUWmLUacTuoHQ'
 }, {
     'Name': 'Tallulah Froley',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Sr.',
     'NO': 5,
@@ -41728,7 +41728,7 @@ export default [{
     'id': 'LNRzrbXdVmllEFYlvLmk'
 }, {
     'Name': 'Tasia Farmer',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-0',
     'Year': 'Jr.',
     'NO': 21,
@@ -42152,7 +42152,7 @@ export default [{
     'id': 'mNQVyPVSucSHnPoLqFoX'
 }, {
     'Name': 'Taylor Landfair',
-    'Position': 'Outside',
+    'Position': 'OH',
     'Height': "6-5",
     'Year': '',
     'NO': 12,
@@ -42288,7 +42288,7 @@ export default [{
     'id': 'LcDTkpencJewKdxguCcW'
 }, {
     'Name': 'Taylor Terry',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-3',
     'Year': '',
     'NO': 21,
@@ -42352,7 +42352,7 @@ export default [{
     'id': 'aLvKOkNslpzfKcYMlTPM'
 }, {
     'Name': 'Taylor, Hannah',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Jr.',
     'NO': 7,
@@ -42528,7 +42528,7 @@ export default [{
     'id': 'vdCGznDJqdISoIPFvGEq'
 }, {
     'Name': 'Tessa Gerwig',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'So.',
     'NO': 10,
@@ -42768,7 +42768,7 @@ export default [{
     'id': 'ryGLilCPfyfKsxMGYpBD'
 }, {
     'Name': 'Tori Green',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 10,
@@ -43112,7 +43112,7 @@ export default [{
     'id': 'lFArTbUpMLtZOMwiXKDW'
 }, {
     'Name': 'Tyra Williams',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-9',
     'Year': 'R-Fr.',
     'NO': 6,
@@ -43184,7 +43184,7 @@ export default [{
     'id': 'KjYbfOhyXeHzhAoGguUO'
 }, {
     'Name': 'Valentina Varani',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-1',
     'Year': 'R-So.',
     'NO': 9,
@@ -43432,7 +43432,7 @@ export default [{
     'id': 'xxcPeaJDrFtqdUPMalcQ'
 }, {
     'Name': 'Victoria Wood',
-    'Position': 'RS',
+    'Position': 'OPP',
     'Height': '5-11',
     'Year': 'Sr.',
     'NO': 3,
@@ -43952,7 +43952,7 @@ export default [{
     'id': 'lAdeNXskUpohZMFCuuLr'
 }, {
     'Name': 'Zoe Gibbs',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-0',
     'Year': 'So.',
     'NO': 7,
@@ -44096,7 +44096,7 @@ export default [{
     'id': 'XAfzTkPPEByunJULUHSN'
 }, {
     'Name': 'Zoie Stewart',
-    'Position': 'MH',
+    'Position': 'MB',
     'Height': '6-2',
     'Year': 'Sr.',
     'NO': 4,
@@ -44144,7 +44144,7 @@ export default [{
     'id': 'nnEPJrqjmTubgSGjhJOr'
 }, {
     'Name': 'Zuzanna Wieczorek',
-    'Position': 'D/O',
+    'Position': 'OH/OPP',
     'Height': '6-1',
     'Year': 'Fr.',
     'NO': 20,
