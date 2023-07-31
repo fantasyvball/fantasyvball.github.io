@@ -148,7 +148,7 @@ footer {
 }
 
 .player-image {
-  opacity: 0.7; /* Set the desired opacity value (0.0 to 1.0) */
+  opacity: 0.3; /* Set the desired opacity value (0.0 to 1.0) */
   max-width: 100%;
   max-height: 100%;
 }
