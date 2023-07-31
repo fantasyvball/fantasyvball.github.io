@@ -50,10 +50,10 @@ export default {
   },methods: {
     getImageSrc(team){
       if(team == "Saint Francis (PA)" || team == "UMES"){
-        return "./" + team + ".png"
+        return "./assets/" + team + ".png"
       }
       
-      return "./" + team + ".svg"
+      return "./assets/" + team + ".svg"
     },
     CollapseCard(event) {
       this.state_collapse = true;
