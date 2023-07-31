@@ -98,6 +98,7 @@ export default {
           <input id="collapseAll" class="form-check-input" type="checkbox" v-model="collapseAll" @change="onCollapseAllChange"/>
           <label class="form-check-label" for="collapseAll">Collapse All</label>
         </div>
+
       </div>
       <div v-if="isLoading">
         <div class="loading-container" style="justify-content: center; align-items: center;">
@@ -113,8 +114,8 @@ export default {
             <div v-for="player in filteredList" :key="player.Name">
               <PlayerCard :player="player" :class="getPlayerCardClass(player)" :collapse="collapseAll">
                 <div>
-                  <button v-if="isLoggedIn && !owned(player)" class="btn btn-primary" @click="addPlayer(player)">Add</button>
-                  <button v-if="isLoggedIn && isDroppable(player)" class="btn btn-danger" @click="releasePlayer(player)">Release</button>
+                  <button v-if="isLoggedIn && !owned(player)" class="btn btn-primary me-2" @click="addPlayer(player)">Add</button>
+                  <button v-if="isLoggedIn && isDroppable(player)" class="btn btn-danger me-2" @click="releasePlayer(player)">Release</button>
                 </div>
               </PlayerCard>
               <br />
