@@ -1,6 +1,9 @@
 export default {
   template:`
     <div class="container">
+      <div class="alert alert-info mt-3 position-relative" role="alert">
+        🚧 🚧 🚧 This page is currently under construction! We appreciate your understanding and would love to hear your feedback as we continue to develop and improve it! 👷👷👷
+      </div>
       <h1>Leaderboard</h1>
   
       <div class="btn-group mb-3" role="group">
@@ -55,80 +58,80 @@ export default {
       
       players: [
         {
-          name: 'Player K',
+          name: 'All Audrey ;)',
           id: 0,
-          favoriteTeam: 'Team Y',
+          favoriteTeam: 'UC Irvine',
           weeklyPoints: [30, 40, 20, 50, 45, 35, 60]
         },
         {
-          name: 'Player L',
+          name: 'Rando1',
           id: 1,
-          favoriteTeam: 'Team Z',
+          favoriteTeam: 'Texas',
           weeklyPoints: [15, 25, 30, 20, 40, 30, 35]
         },
         {
-          name: 'Player M',
+          name: 'Rando4',
           id: 2,
-          favoriteTeam: 'Team X',
+          favoriteTeam: 'Hawaii',
           weeklyPoints: [10, 20, 15, 25, 30, 40, 50]
         },
         {
-          name: 'Player N',
+          name: 'Rando2',
           id: 3,
-          favoriteTeam: 'Team Y',
+          favoriteTeam: 'Oreogon',
           weeklyPoints: [25, 35, 40, 15, 20, 25, 30]
         },
         {
-          name: 'Player O',
+          name: 'UC Gang',
           id: 4,
-          favoriteTeam: 'Team Z',
+          favoriteTeam: 'UCLA',
           weeklyPoints: [20, 30, 25, 35, 40, 20, 25]
         },
         {
-          name: 'Player P',
+          name: 'The Tall Gals',
           id: 5,
-          favoriteTeam: 'Team X',
+          favoriteTeam: 'unknown',
           weeklyPoints: [40, 50, 45, 35, 30, 40, 20]
         },
         {
-          name: 'Player Q',
+          name: 'UC Gang',
           id: 6,
-          favoriteTeam: 'Team Y',
+          favoriteTeam: 'unknown',
           weeklyPoints: [30, 40, 20, 50, 45, 35, 60]
         },
         {
-          name: 'Player R',
+          name: 'Rando3',
           id: 7,
-          favoriteTeam: 'Team Z',
+          favoriteTeam: 'unknown',
           weeklyPoints: [15, 25, 30, 20, 40, 30, 35]
         },
         {
-          name: 'Player S',
+          name: 'The American Hero',
           id: 8,
-          favoriteTeam: 'Team X',
+          favoriteTeam: 'unknown',
           weeklyPoints: [10, 20, 15, 25, 30, 40, 50]
         },
         {
-          name: 'Player T',
+          name: 'Rando5',
           id: 9,
-          favoriteTeam: 'Team Y',
+          favoriteTeam: 'unknown',
           weeklyPoints: [25, 35, 40, 15, 20, 25, 30]
         },
         {
-          name: 'Player U',
+          name: 'Rando6',
           id: 10,
-          favoriteTeam: 'Team Z',
+          favoriteTeam: 'unknown',
           weeklyPoints: [20, 30, 25, 35, 40, 20, 25]
         },
         {
-          name: 'Player V',
+          name: 'Rando7',
           id: 11,
-          favoriteTeam: 'Team X',
+          favoriteTeam: 'unknown',
           weeklyPoints: [40, 50, 45, 35, 30, 40, 20]
         },
         // Add more players...
       ],
-      friends: ['Player L', 'Player O', 'Player Q','Player S', 'Player U', 'Player V'], // Dummy list of friends
+      friends: ['All Audrey ;)', 'The Big O', 'Rando1','Rando3', 'Rando5', 'Rando7'], // Dummy list of friends
       currentPage: 1,
       pageSize: 5,
     };
@@ -173,7 +176,7 @@ export default {
     },
     currentUserID() {
       if (window.user) {
-        return 0;
+        return '';
       }
       return '';
     },
@@ -242,7 +245,7 @@ export default {
       }
     },
     viewRoster(player){
-      this.$router.push({path: "/user/"+player.name[7]});
+      this.$router.push({path: "/user/"+player.name});
     },
   }
 };
