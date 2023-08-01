@@ -182,14 +182,21 @@ function initList() {
       const dbRef = ref(getDatabase());
       get(child(dbRef, "users/"+uid)).then((snapshot) => {
         if (snapshot.exists()) {
-          my_secret_list = snapshot.val();
-          for(let i = 0; i < 7; i++){
-            if(my_secret_list[i].includes("******************")){
+          const snap_val = snapshot.val()
+          for(let i = 0; i < 20; i ++){
+            const j = snap_val[i]
+            if(j && j.includes("******************") && i>7){
+              my_secret_list[i] = "null"
+            }else if(j && j.includes("******************")){
               my_secret_list[i] = null
+            }else if(j){
+              my_secret_list[i] = j
             }
           }
-          while(my_secret_list[my_secret_list.length - 1].includes("******************")){
-            my_secret_list.splice(my_secret_list.length - 1,1)
+          let i = my_secret_list.indexOf("null")
+          while(i != -1){
+            my_secret_list.splice(i,1)
+            i = my_secret_list.indexOf("null")
           }
         } else {
           // ignore
@@ -205,32 +212,34 @@ function initList() {
 
 function getUserRoster(uid){
   return new Promise((resolve, reject) => {
-    if(!['K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V'].includes(uid)){
-      reject()
-    }
-    else{
-      const dbRef = ref(getDatabase());
-      let out = [];
-      get(child(dbRef, "users/"+uid)).then((snapshot) => {
-        if (snapshot.exists()) {
-          out = snapshot.val();
-          for(let i = 0; i < 7; i++){
-            if(out[i].includes("******************")){
-              out[i] = null
-            }
+    const dbRef = ref(getDatabase());
+    get(child(dbRef, "users/"+uid)).then((snapshot) => {
+      let out = []
+      if (snapshot.exists()) {
+        const snap_val = snapshot.val()
+        for(let i = 0; i < 20; i ++){
+          const j = snap_val[i]
+          if(j && j.includes("******************") && i>7){
+            out[i] = "null"
+          }else if(j && j.includes("******************")){
+            out[i] = null
+          }else if(j){
+            out[i] = j
           }
-          while(out[out.length - 1].includes("******************")){
-            out.splice(out.length - 1,1)
-          }
-        } else {
-          // ignore
         }
-        resolve(out);
-      }).catch((error) => {
-        console.log(error);
-        reject(error);
-      });
-    }
+        let i = out.indexOf("null")
+        while(i != -1){
+          out.splice(i,1)
+          i = out.indexOf("null")
+        }
+      } else {
+        // ignore
+      }
+      resolve(out);
+    }).catch((error) => {
+      console.log(error);
+      reject(error);
+    });
     
   });
 }
