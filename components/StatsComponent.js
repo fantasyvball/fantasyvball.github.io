@@ -1,43 +1,46 @@
 export default {
   template:`
-<div class="flex-container" style = "display: flex;flex-wrap: wrap;">
-          <div class="card mb-4 stat-card">
-            <h2>Weeks Spend on _ Place</h2>
-            <div class="chart-container">
-              <canvas :id="chart1Id" width="200" height="300"></canvas>
-            </div>
-          </div>
-          <div class="card mb-4 stat-card">
-            <h2>Rank Change</h2>
-            <div class="chart-container">
-              <canvas :id="chart2Id" width="200" height="300"></canvas>
-            </div>
-          </div>
-          <div class="card mb-4 stat-card">
-            <h2>Point Score by Position</h2>
-            <div class="chart-container">
-              <canvas :id="chart3Id" width="200" height="300"></canvas>
-            </div>
-          </div>
-          <div class="card mb-4 stat-card">
-            <h2>Weekly Points Prediction</h2>
-            <div class="chart-container">
-              <canvas :id="chart4Id" width="200" height="300"></canvas>
-            </div>
-          </div>
-          <div class="card mb-4 stat-card">
-            <h2>Weekly Points Breakdown by Position</h2>
-            <div class="chart-container">
-              <canvas :id="chart5Id" width="200" height="300"></canvas>
-            </div>
-          </div>
-          <div class="card mb-4 stat-card">
-            <h2>Friends Ranking Change</h2>
-            <div class="chart-container">
-              <canvas :id="chart6Id" width="200" height="300"></canvas>
-            </div>
-          </div>
-</div>
+    <div class="alert alert-info mt-3 position-relative" role="alert">
+      🚧 🚧 🚧 This page is currently under construction! We appreciate your understanding and would love to hear your feedback as we continue to develop and improve it! 👷👷👷
+    </div>
+    <div class="flex-container" style = "display: flex;flex-wrap: wrap;">
+      <div class="card mb-4 stat-card">
+        <h2>Weeks Spend on</h2>
+        <div class="chart-container">
+          <canvas :id="chart1Id" width="200" height="300"></canvas>
+        </div>
+      </div>
+      <div class="card mb-4 stat-card">
+        <h2>Rank Change</h2>
+        <div class="chart-container">
+          <canvas :id="chart2Id" width="200" height="300"></canvas>
+        </div>
+      </div>
+      <div class="card mb-4 stat-card">
+        <h2>Point Score by Position</h2>
+        <div class="chart-container">
+          <canvas :id="chart3Id" width="200" height="300"></canvas>
+        </div>
+      </div>
+      <div class="card mb-4 stat-card">
+        <h2>Weekly Points Prediction</h2>
+        <div class="chart-container">
+          <canvas :id="chart4Id" width="200" height="300"></canvas>
+        </div>
+      </div>
+      <div class="card mb-4 stat-card">
+        <h2>Weekly Points Breakdown by Position</h2>
+        <div class="chart-container">
+          <canvas :id="chart5Id" width="200" height="300"></canvas>
+        </div>
+      </div>
+      <div class="card mb-4 stat-card">
+        <h2>Friends Ranking Change</h2>
+        <div class="chart-container">
+          <canvas :id="chart6Id" width="200" height="300"></canvas>
+        </div>
+      </div>
+    </div>
   `,
   data() {
     return {
@@ -49,7 +52,7 @@ export default {
       chart6Id: 'chart6',
       playerStats: {
         weeksSpentOn1stPlace: {
-          labels: ['1', '2', '3', '4', '5'],
+          labels: ['1st', '2nd', '3rd', '4th', '5+'],
           data: [3, 2, 1, 4, 2],
         },
         rankChange: {
@@ -211,4 +214,3 @@ export default {
 
   },
 };
-
