@@ -12,6 +12,11 @@ export default {
         <button type="button" class="btn-close position-absolute end-0" @click="dbError = false"></button>
       </div>
 
+      <div v-if="noPlayers" class="alert alert-info mt-3 position-relative" role="alert">
+        This player either doens't exist or haven't set their roster yet! check back later!
+        <button type="button" class="btn-close position-absolute end-0" @click="noPlayers = false"></button>
+      </div>
+
       
 
       <div>
@@ -25,45 +30,45 @@ export default {
         </div>
         <div v-else>
           <div>
-            <h1>Roster</h1>
+            <h1>{{username}}'s Roster</h1>
             <div class="row">
               <div class="col-md-4">
                 <h3>L</h3>
-                <PlayerCard :player="starter[0]" :style="calcStyle(0,'L')">
+                <PlayerCard :player="starter[0]" collapse="true" :style="calcStyle(0,'L')">
                 </PlayerCard>
               </div>
               <div class="col-md-4">
                 <h3>S</h3>
-                <PlayerCard :player="starter[1]" :style="calcStyle(1,'S')">
+                <PlayerCard :player="starter[1]" collapse="true" :style="calcStyle(1,'S')">
                 </PlayerCard>
               </div>
               <div class="col-md-4">
                 <h3>OPP</h3>
-                <PlayerCard :player="starter[2]" :style="calcStyle(2,'OPP')">
+                <PlayerCard :player="starter[2]" collapse="true" :style="calcStyle(2,'OPP')">
                 </PlayerCard>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <h3>MB</h3>
-                <PlayerCard :player="starter[3]" :style="calcStyle(3,'MB')">
+                <PlayerCard :player="starter[3]" collapse="true" :style="calcStyle(3,'MB')">
                 </PlayerCard>
               </div>
               <div class="col-md-6">
                 <h3>MB</h3>
-                <PlayerCard :player="starter[4]" :style="calcStyle(4,'MB')">
+                <PlayerCard :player="starter[4]" collapse="true" :style="calcStyle(4,'MB')">
                 </PlayerCard>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <h3>OH</h3>
-                <PlayerCard :player="starter[5]" :style="calcStyle(5,'OH')">
+                <PlayerCard :player="starter[5]" collapse="true" :style="calcStyle(5,'OH')">
                 </PlayerCard>
               </div>
               <div class="col-md-6">
                 <h3>OH</h3>
-                <PlayerCard :player="starter[6]" :style="calcStyle(6,'OH')">
+                <PlayerCard :player="starter[6]" collapse="true" :style="calcStyle(6,'OH')">
                 </PlayerCard>
               </div>
             </div>
@@ -71,7 +76,7 @@ export default {
               <div class="col-md-12">
                 <h3>Bench</h3>
                 <div v-for="playerIndexPair in bench" :key="bench" class="mb-3">
-                  <PlayerCard :player="playerIndexPair[0]">
+                  <PlayerCard :player="playerIndexPair[0]" collapse="true" >
                   </PlayerCard>
                 </div>
               </div>
@@ -86,14 +91,17 @@ export default {
   },
   data() {
     return {
+      username:"",
       players: [],
       isLoading: true,
       dbError: false,
       fireStoreError: false,
+      noPlayers: false,
     };
   },
   mounted() {
-    this.loadPlayer(this.$route.params.id);
+    this.username = this.$route.params.id
+    this.loadPlayer(this.username);
   },
   computed: {
     isLoggedIn() {
@@ -119,18 +127,16 @@ export default {
   methods: {
     calcStyle(index,pos){
       return {}
-      const style = {};
-      if(!this.players[index] || this.players[index].position.includes(pos)){
-        return style;
-      }
-      style.backgroundColor = "#d8bcbe";
-      this.outOfPostionWarning = true;
-      return style
+      
     },
     loadPlayer(id){
       window.getAllPlayers().then(() =>{
         window.getUserRoster(id).then((obj) =>{
           this.players = obj
+          if(this.players.length == 0){
+            this.noPlayers = true;
+            this.players = [null,null,null,null,null,null,null,null,null,null,]
+          }
           this.isLoading = false;      
         })
         .catch((error) => {
