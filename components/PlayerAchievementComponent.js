@@ -2,17 +2,45 @@ import Achievement from './AchievementComponent.js';
 
 export default {
   template:`
-    <div v-if="isLoggedIn" class="player-achievement">
-      <h3>Player Achievements</h3>
-      <div class="row">
-        <div class="col-md-4" v-for="achievement in achievements" :key="achievement.id">
-          <achievement :achievement="achievement" />
-          <br>
+    <div class="player-achievement">
+      <div class="alert alert-info mt-3 position-relative" role="alert">
+        🚧 🚧 🚧 This page is currently under construction! We appreciate your understanding and would love to hear your feedback as we continue to develop and improve it! 👷👷👷
+      </div>
+      
+      <h3>Achievements</h3>
+  
+      <div v-if="isLoggedIn">
+        <!-- Completed Achievements -->
+        <h4>Completed</h4>
+        <div class="row">
+          <div class="col-md-4" v-for="achievement in completedAchievements" :key="achievement.id">
+            <achievement :achievement="achievement" />
+            <br>
+          </div>
+        </div>
+  
+        <!-- In Progress Achievements -->
+        <h4>In Progress</h4>
+        <div class="row">
+          <div class="col-md-4" v-for="achievement in inProgressAchievements" :key="achievement.id">
+            <achievement :achievement="achievement" />
+            <br>
+          </div>
+        </div>
+  
+        <!-- Undiscovered Achievements -->
+        <h4>Undiscovered</h4>
+        <div class="row">
+          <div class="col-md-4" v-for="achievement in undiscoveredAchievements" :key="achievement.id">
+            <achievement :achievement="{id: -1, title: '???', description: '???', level: 0, progress: 0, target: 1}" />
+            <br>
+          </div>
         </div>
       </div>
-    </div>
-    <div v-else>
-      please log in to see all the achievements
+  
+      <div v-else>
+        please log in to see all the achievements
+      </div>
     </div>
   `,
   components: {
@@ -22,10 +50,27 @@ export default {
     isLoggedIn() {
       return window.user != null;
     },
+    completedAchievements() {
+      return this.achievements.filter(achievement => achievement.progress === achievement.target);
+    },
+    inProgressAchievements() {
+      return this.achievements.filter(achievement => achievement.progress > 0 && achievement.progress < achievement.target);
+    },
+    undiscoveredAchievements() {
+      return this.achievements.filter(achievement => achievement.progress === 0);
+    },
   },
   data() {
     return {
       achievements: [
+        {
+          id: 0,
+          title: 'Early Investor',
+          description: 'Sign up before official release.',
+          level: 5,
+          progress: 1,
+          target: 1,
+        },
         {
           id: 1,
           title: 'Most Valuable Player',
@@ -66,8 +111,31 @@ export default {
           progress: 8,
           target: 15,
         },
+        {
+          id: 6,
+          title: 'Most Valuable Player',
+          description: 'acquire top scorer from the week.',
+          level: 0,
+          progress: 0,
+          target: 1,
+        },
+        {
+          id: 7,
+          title: '???',
+          description: '???',
+          level: 0,
+          progress: 0,
+          target: 1,
+        },
+        {
+          id: 8,
+          title: '???',
+          description: '???',
+          level: 0,
+          progress: 0,
+          target: 1,
+        },
       ],
     };
   },
 };
-
