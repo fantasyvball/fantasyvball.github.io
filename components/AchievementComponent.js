@@ -1,9 +1,7 @@
-
-
 export default {
   template:`
     <div class="card achievement">
-      <img :src="achievement.image" class="card-img-top" :alt="achievement.title+'.png'">
+      <img src="./assets/question_mark.jpg" class="card-img-top" alt="trophy image">
       <div class="card-body" :style="calcStyle(achievement.level)">
         <h5 class="card-title">{{ achievement.title }}</h5>
         <p class="card-text">{{ achievement.description }}</p>
@@ -39,16 +37,18 @@ export default {
     calcStyle(level) { 
       let style = {}
       if(level === 1){
-        style.backgroundColor = "#BA8C63"
+        style.backgroundColor = "#C19A6B"
       }else if(level == 2){
-        style.backgroundColor = "#825E2F"
+        style.backgroundColor = "#CD7F32"
       }else if(level == 3){
-        style.backgroundColor = "#A6A6A6"
-      }else if(level >= 4){
-        style.backgroundColor = "#B78727"
+        style.backgroundColor = "#D8D8D8"
+      }else if(level == 4){
+        style.backgroundColor = "#D4AF37"
+      }else if(level >=5){
+        style.backgroundColor = "#89CFF0"
       }
+      
       return style 
     },
   },
 };
-
