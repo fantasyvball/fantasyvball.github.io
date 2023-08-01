@@ -69,11 +69,11 @@ export default {
           </div>
           <div class="col-md-4">
             <div class="mb-3">
-              <label for="selectedPositions">Positions:</label>
+              <label for="selectedPositions">Positions(color coded):</label>
               <select id="selectedPositions" multiple  v-model="selectedPositions">
                 <option value="all">All Positions</option>
               
-                <option v-for="position in positions" :key="position" :value="position">{{ position }}</option>
+                <option v-for="pair in positionColorPairs" class="libero-border" :key="pair[0]" :value="pair[0]" >{{pair[0]}}({{pair[1]}})</option>
               </select>
             </div>
           </div>
@@ -162,7 +162,7 @@ export default {
       noAddError: false,
       schools: [],
       allConf: ['AAC', 'ACC', 'ASUN', 'America East', 'Atlantic 10', 'Big 12', 'Big East', 'Big Sky', 'Big South', 'Big Ten', 'Big West', 'C-USA', 'CAA', 'DI Independent', 'Horizon', 'Ivy League', 'MAAC', 'MAC', 'MEAC', 'MVC', 'Mountain West', 'NEC', 'OVC', 'Pac-12', 'Patriot', 'SEC', 'SWAC', 'SoCon', 'Southland', 'Summit League', 'Sun Belt', 'WAC', 'WCC'],
-      positions: ["L", "S", "MB", "OH", "OPP", "DS"],
+      positionColorPairs: [["L","lime"], ["S","silver"], ["DS","denim"], ["MB","baby blue"], ["OH","orange"], ["OPP","purple"]],
       years: ["Fy.", "Fr.", "R-Fr.", "So.", "R-So.", "Jr.", "R-Jr.", "Sr.", "R-Sr.", "Gr."],
       selectedSchools: [], // Array to store selected schools
       selectedPositions: [], // Array to store selected positions
@@ -184,6 +184,13 @@ export default {
       new MultipleSelect('#selectedYears', {
           placeholder: 'filter year',
         });
+      document.getElementById("multiple-select-container-2").children[1].children[1].children[1].classList.add("libero-border")
+      document.getElementById("multiple-select-container-2").children[1].children[1].children[2].classList.add("setter-border")
+      document.getElementById("multiple-select-container-2").children[1].children[1].children[3].classList.add("defense-border")
+      document.getElementById("multiple-select-container-2").children[1].children[1].children[4].classList.add("blocker-border")
+      document.getElementById("multiple-select-container-2").children[1].children[1].children[5].classList.add("outside-border")
+      document.getElementById("multiple-select-container-2").children[1].children[1].children[6].classList.add("oppo-border")
+      
     }, "0");
     
     
