@@ -156,14 +156,16 @@ footer {
   pointer-events: none;
 }
 
-
-
 .libero-border {
   border-left: 5px solid #00ff00 !important;
 }
 
 .setter-border {
   border-left: 5px solid #c0c0c0 !important;
+}
+
+.defense-border {
+  border-left: 5px solid #1560bd !important;
 }
 
 .blocker-border {
@@ -175,9 +177,7 @@ footer {
 }
 
 .oppo-border {
-  
   border-left: 5px solid #dda0dd !important;
-  
 }
 
 .unknow-border {
