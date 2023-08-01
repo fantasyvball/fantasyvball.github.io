@@ -1,5 +1,8 @@
 export default{
   template: `
+    <div class="alert alert-info mt-3 position-relative" role="alert">
+      	🚀 🚀 Exciting News! 🚀 🚀 We are thrilled to announce our test launch! 🔥 Sign up today and be one of the first to experience our amazing player database and more. As a special thank-you, you'll also receive an exclusive badge for being a part of our pioneering community. Don't miss out on this incredible opportunity! Join us now!
+    </div>
     <div>
       <div v-if="logoutSuccess" class="alert alert-info mt-3 position-relative" role="alert">
         Logged out successfully!
