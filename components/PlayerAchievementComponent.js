@@ -66,7 +66,7 @@ export default {
         {
           id: 0,
           title: 'Early Investor',
-          description: 'Sign up before official release.',
+          description: 'Earn this badge by signing up before official release. Thank you for your support!',
           level: 5,
           progress: 1,
           target: 1,
