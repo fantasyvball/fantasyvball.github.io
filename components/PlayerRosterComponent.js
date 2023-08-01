@@ -76,19 +76,19 @@ export default {
             <div class="row">
               <div class="col-md-4">
                 <h3>L</h3>
-                <PlayerCard :player="starter[0]" :style="calcStyle(0,'L')">
+                <PlayerCard :player="starter[0]" collapse="true" :style="calcStyle(0,'L')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(0)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-4">
                 <h3>S</h3>
-                <PlayerCard :player="starter[1]" :style="calcStyle(1,'S')">
+                <PlayerCard :player="starter[1]" collapse="true" :style="calcStyle(1,'S')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(1)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-4">
                 <h3>OPP</h3>
-                <PlayerCard :player="starter[2]" :style="calcStyle(2,'OPP')">
+                <PlayerCard :player="starter[2]" collapse="true" :style="calcStyle(2,'OPP')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(2)">Bench</button>
                 </PlayerCard>
               </div>
@@ -96,13 +96,13 @@ export default {
             <div class="row">
               <div class="col-md-6">
                 <h3>MB</h3>
-                <PlayerCard :player="starter[3]" :style="calcStyle(3,'MB')">
+                <PlayerCard :player="starter[3]" collapse="true" :style="calcStyle(3,'MB')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(3)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-6">
                 <h3>MB</h3>
-                <PlayerCard :player="starter[4]" :style="calcStyle(4,'MB')">
+                <PlayerCard :player="starter[4]" collapse="true" :style="calcStyle(4,'MB')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(4)">Bench</button>
                 </PlayerCard>
               </div>
@@ -110,13 +110,13 @@ export default {
             <div class="row">
               <div class="col-md-6">
                 <h3>OH</h3>
-                <PlayerCard :player="starter[5]" :style="calcStyle(5,'OH')">
+                <PlayerCard :player="starter[5]" collapse="true" :style="calcStyle(5,'OH')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(5)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-6">
                 <h3>OH</h3>
-                <PlayerCard :player="starter[6]" :style="calcStyle(6,'OH')">
+                <PlayerCard :player="starter[6]" collapse="true" :style="calcStyle(6,'OH')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(6)">Bench</button>
                 </PlayerCard>
               </div>
@@ -227,9 +227,9 @@ export default {
       
     },
     calcStyle(index,pos){
-      return {}
+      // return {}
       const style = {};
-      if(!this.players[index] || this.players[index].position.includes(pos)){
+      if(!this.players[index] || window.getPlayerById(this.players[index]).Position.includes(pos)){
         return style;
       }
       style.backgroundColor = "#d8bcbe";
