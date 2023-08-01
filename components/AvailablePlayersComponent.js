@@ -88,17 +88,20 @@ export default {
           </div>
         </div>
     
-        <div v-if="isLoggedIn" class="d-flex align-items-end">
-          <div class="mb-3 form-check">
-            <input id="showOwnedPlayers" class="form-check-input" type="checkbox" v-model="showOwnedPlayers" />
-            <label class="form-check-label" for="showOwnedPlayers">Show owned players</label>
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-end">
+            <div class="mb-3 form-check">
+              <input id="showOwnedPlayers" class="form-check-input" type="checkbox" v-model="showOwnedPlayers" />
+              <label class="form-check-label" for="showOwnedPlayers">Show owned players</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3 form-check">
+              <input id="collapseAll" class="form-check-input" type="checkbox" v-model="collapseAll" @change="onCollapseAllChange"/>
+              <label class="form-check-label" for="collapseAll">Collapse All</label>
+            </div>
           </div>
         </div>
-        <div class="mb-3 form-check">
-          <input id="collapseAll" class="form-check-input" type="checkbox" v-model="collapseAll" @change="onCollapseAllChange"/>
-          <label class="form-check-label" for="collapseAll">Collapse All</label>
-        </div>
-
       </div>
       <div v-if="isLoading">
         <div class="loading-container" style="justify-content: center; align-items: center;">
