@@ -10,7 +10,7 @@ export default {
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            Would you like to receive news and updates from Fantasy Volleyball? You can cancel anytime at https://yuchuehw.github.io/fantasyvolleyball/#/subscription
+            Would you like to receive news and updates from Fantasy Volleyball? We promise not to send annoying emails and only important updates!
           </div>
           
           <div class="modal-footer">
