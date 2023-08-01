@@ -49,10 +49,10 @@ export default {
   },methods: {
     getImageSrc(team){
       if(team == "Saint Francis (PA)" || team == "UMES"){
-        return "./assets/" + team + ".png"
+        return "https://fantasyvball.github.io/assets/" + team + ".png"
       }
       
-      return "./assets/" + team + ".svg"
+      return "https://fantasyvball.github.io/assets/" + team + ".svg"
     },
     CollapseCard(event) {
       this.state_collapse = true;
@@ -70,19 +70,22 @@ export default {
         return {}
       }
       const position = player.Position.split("/")[0]
-      if(position.includes("L") || position.includes("DS")){
+      if(position == "L"){
         return {"libero-border": true}
       }
-      else if(position.includes("S")){
+      else if(position == "DS"){
+        return {"defense-border": true}
+      }
+      else if(position == "S"){
         return {"setter-border": true}
       }
-      else if(position.includes("MB")){
+      else if(position == "MB"){
         return {"blocker-border": true}
       }
-      else if(position.includes("OH")){
+      else if(position == "OH"){
         return {"outside-border": true}
       }
-      else if(position.includes("OPP")){
+      else if(position == "OPP"){
         return {"oppo-border": true}
       }
       else{
