@@ -89,7 +89,7 @@ export default {
         </div>
     
         <div class="row">
-          <div class="col-md-6 d-flex align-items-end">
+          <div v-if="isLoggedIn" class="col-md-6 d-flex align-items-end">
             <div class="mb-3 form-check">
               <input id="showOwnedPlayers" class="form-check-input" type="checkbox" v-model="showOwnedPlayers" />
               <label class="form-check-label" for="showOwnedPlayers">Show owned players</label>
