@@ -49,10 +49,10 @@ export default {
   },methods: {
     getImageSrc(team){
       if(team == "Saint Francis (PA)" || team == "UMES"){
-        return "https://fantasyvball.github.io/assets/" + team + ".png"
+        return "./assets/" + team + ".png"
       }
       
-      return "https://fantasyvball.github.io/assets/" + team + ".svg"
+      return "./assets/" + team + ".svg"
     },
     CollapseCard(event) {
       this.state_collapse = true;
