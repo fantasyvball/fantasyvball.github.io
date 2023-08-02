@@ -7,7 +7,7 @@ import HomeComponent from './components/HomeComponent.js';
 import PlayerRosterComponent from './components/PlayerRosterComponent.js'
 import UserComponent from './components/UserComponent.js'
 
-import AvailablePlayersComponent from './components/AvailablePlayersComponent.js'
+import AvailablePlayersComponent from './minified/AvailablePlayersComponent.js'
 import ArticleComponent from './components/ArticleComponent.js'
 import LeaderBoardComponent from './components/LeaderBoardComponent.js'
 import PlayerAchievmentComponent from './components/PlayerAchievementComponent.js'
