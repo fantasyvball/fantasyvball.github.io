@@ -141,11 +141,11 @@ export default {
       </div>
     </section>
 
-    <div class="modal fade" id="noSignInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="noSignInModal" tabindex="-1" aria-labelledby="noSignInModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content" style="background-color: #333; color: #fff; border-radius: 0.5rem;">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Just a heads up!</h5>
+            <h5 class="modal-title" id="noSignInModalLabel">Just a heads up!</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
