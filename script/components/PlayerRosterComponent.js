@@ -229,7 +229,7 @@ export default {
     calcStyle(index,pos){
       // return {}
       const style = {};
-      if(!this.players[index] || window.getPlayerById(this.players[index]).Position.includes(pos)){
+      if(!this.players[index] || !window.getPlayerById(this.players[index]).Position || window.getPlayerById(this.players[index]).Position.includes(pos)){
         return style;
       }
       style.backgroundColor = "#d8bcbe";
@@ -248,7 +248,7 @@ export default {
           this.players = window.secret_list_getter();
           if(this.players.length == 0){
             this.noPlayers = true;
-            this.players = [null,null,null,null,null,null,null,null,null,null,]
+            this.players = [null,null,null,null,null,null,null,]
           }
           this.isLoading = false;      
         })
