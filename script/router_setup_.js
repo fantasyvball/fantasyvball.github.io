@@ -4,7 +4,7 @@ import FooterComponent from './components/FooterComponent.js';
 import LoginComponent from './minified/LoginComponent.js';
 import LogoutComponent from './components/LogoutComponent.js';
 import HomeComponent from './components/HomeComponent.js';
-import PlayerRosterComponent from './components/PlayerRosterComponent.js'
+import PlayerRosterComponent from './minified/PlayerRosterComponent.js'
 import UserComponent from './components/UserComponent.js'
 
 import AvailablePlayersComponent from './minified/AvailablePlayersComponent.js'
