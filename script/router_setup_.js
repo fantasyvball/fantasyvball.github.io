@@ -3,7 +3,7 @@ import FooterComponent from './minified/FooterComponent.js';
 
 import LoginComponent from './minified/LoginComponent.js';
 import LogoutComponent from './components/LogoutComponent.js';
-import HomeComponent from './components/HomeComponent.js';
+import HomeComponent from './minified/HomeComponent.js';
 import PlayerRosterComponent from './minified/PlayerRosterComponent.js'
 import UserComponent from './components/UserComponent.js'
 
