@@ -1,5 +1,5 @@
 import NavbarComponent from './components/NavbarComponent.js';
-import FooterComponent from './components/FooterComponent.js';
+import FooterComponent from './minified/FooterComponent.js';
 
 import LoginComponent from './minified/LoginComponent.js';
 import LogoutComponent from './components/LogoutComponent.js';
