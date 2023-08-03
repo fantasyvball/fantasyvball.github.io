@@ -1,9 +1,6 @@
 export default {
   template:`
     <div class="container">
-      <div class="alert alert-info mt-3 position-relative" role="alert">
-        🚧 🚧 🚧 This page is currently under construction! We appreciate your understanding and would love to hear your feedback as we continue to develop and improve it! 👷👷👷
-      </div>
       <h1>Leaderboard</h1>
   
       <div class="btn-group mb-3" role="group">
@@ -64,74 +61,51 @@ export default {
           weeklyPoints: [30, 40, 20, 50, 45, 35, 60]
         },
         {
-          name: 'Rando1',
+          name: 'Freshmen Rule!',
           id: 1,
-          favoriteTeam: 'Texas',
+          favoriteTeam: 'unknown',
           weeklyPoints: [15, 25, 30, 20, 40, 30, 35]
         },
         {
-          name: 'Rando4',
+          name: 'A why not?',
           id: 2,
-          favoriteTeam: 'Hawaii',
+          favoriteTeam: 'unknown',
           weeklyPoints: [10, 20, 15, 25, 30, 40, 50]
         },
         {
-          name: 'Rando2',
+          name: 'WHAT!!',
           id: 3,
-          favoriteTeam: 'Oreogon',
+          favoriteTeam: 'unknown',
           weeklyPoints: [25, 35, 40, 15, 20, 25, 30]
         },
         {
-          name: 'UC Gang',
+          name: 'The Big O',
           id: 4,
-          favoriteTeam: 'UCLA',
+          favoriteTeam: 'Oreogon',
           weeklyPoints: [20, 30, 25, 35, 40, 20, 25]
         },
         {
           name: 'The Tall Gals',
           id: 5,
-          favoriteTeam: 'unknown',
+          favoriteTeam: 'Texas',
           weeklyPoints: [40, 50, 45, 35, 30, 40, 20]
         },
         {
           name: 'UC Gang',
           id: 6,
-          favoriteTeam: 'unknown',
+          favoriteTeam: 'UCLA',
           weeklyPoints: [30, 40, 20, 50, 45, 35, 60]
         },
         {
-          name: 'Rando3',
+          name: 'Party Animal',
           id: 7,
           favoriteTeam: 'unknown',
           weeklyPoints: [15, 25, 30, 20, 40, 30, 35]
         },
-        {
-          name: 'The American Hero',
-          id: 8,
-          favoriteTeam: 'unknown',
-          weeklyPoints: [10, 20, 15, 25, 30, 40, 50]
-        },
-        {
-          name: 'Rando5',
-          id: 9,
-          favoriteTeam: 'unknown',
-          weeklyPoints: [25, 35, 40, 15, 20, 25, 30]
-        },
-        {
-          name: 'Rando6',
-          id: 10,
-          favoriteTeam: 'unknown',
-          weeklyPoints: [20, 30, 25, 35, 40, 20, 25]
-        },
-        {
-          name: 'Rando7',
-          id: 11,
-          favoriteTeam: 'unknown',
-          weeklyPoints: [40, 50, 45, 35, 30, 40, 20]
-        },
+        
         // Add more players...
       ],
-      friends: ['All Audrey ;)', 'The Big O', 'Rando1','Rando3', 'Rando5', 'Rando7'], // Dummy list of friends
+      friends: ['All Audrey ;)', 'The Big O', 'A why not?',], // Dummy list of friends
       currentPage: 1,
       pageSize: 5,
     };
