@@ -1,7 +1,7 @@
 import NavbarComponent from './components/NavbarComponent.js';
 import FooterComponent from './components/FooterComponent.js';
 
-import LoginComponent from './components/LoginComponent.js';
+import LoginComponent from './minified/LoginComponent.js';
 import LogoutComponent from './components/LogoutComponent.js';
 import HomeComponent from './components/HomeComponent.js';
 import PlayerRosterComponent from './components/PlayerRosterComponent.js'
