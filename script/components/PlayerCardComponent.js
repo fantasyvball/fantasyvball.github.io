@@ -8,9 +8,9 @@ export default {
           <button class="btn btn-secondary" @click.stop="CollapseCard()">collapse</button>
           
         </div>  
-        <h5 v-if="player.Name" class="card-title">{{ player.Name }}<a v-if="player.NO != null"> #{{ player.NO }}</a></h5>
+        <h5 v-if="player.Name" class="card-title">{{ player.Name }}<sup v-if="player.oldList">?</sup><a v-if="player.NO != null"> #{{ player.NO }}</a></h5>
         <h5 v-else class="card-title">Empty</h5>
-        <div v-if="!state_collapse">
+        <div v-if="!actual_state_collapse && player.Name">
           <div class="image-container">
             <img v-if="player.School" class="player-image" :src="getImageSrc(player.School)" class="player-image" alt="Team Logo" />
           </div>
@@ -29,6 +29,7 @@ export default {
     </div>
   `,
   mounted(){
+    //zbUBaumzZVwFUNgXnHRl
     this.state_collapse = this.collapse 
   },
   props: {
@@ -40,6 +41,15 @@ export default {
       type: Boolean,
       default: false,
     },
+  },
+  computed: {
+    actual_state_collapse(){
+      if(!this.player.Name){
+        this.state_collapse = true
+        this.isHovered = false;
+      }
+      return this.state_collapse && this.player.Name
+    }
   },
   data() {
     return {
