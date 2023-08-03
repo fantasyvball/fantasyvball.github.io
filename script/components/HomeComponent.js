@@ -40,20 +40,20 @@ export default{
           id: 0,
           title: "Welcome to Fantasy Volleyball",
           summary: `Join **Fantasy Volleyball**, a vibrant online community that goes beyond a regular website...`,
-          thumbnail: "https://duckduckgo.com/i/4586c410.jpg",
+          thumbnail: "./assets/welcome.jpg",
         },
         {
           id: 1,
           title: "Comming soon",
           summary: "Summary of Article ...........",
-          thumbnail: "https://duckduckgo.com/i/4586c410.jpg",
+          thumbnail: "./assets/welcome.jpg",
           commingSoon: true,
         },
         {
           id: 2,
           title: "Comming soon",
           summary: "Summary of Article ............",
-          thumbnail: "https://duckduckgo.com/i/4586c410.jpg",
+          thumbnail: "./assets/welcome.jpg",
           commingSoon: true,
         },
         // {
@@ -86,8 +86,5 @@ export default{
         });
       }
     }
-  },
-  methods: {
-    
   },
 };
