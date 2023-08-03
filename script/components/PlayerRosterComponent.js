@@ -76,19 +76,19 @@ export default {
             <div class="row">
               <div class="col-md-4">
                 <h3>L</h3>
-                <PlayerCard :player="starter[0]" collapse="true" :style="calcStyle(0,'L')">
+                <PlayerCard id="card0" :player="starter[0]" collapse="true" :style="calcStyle(0,'L')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(0)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-4">
                 <h3>S</h3>
-                <PlayerCard :player="starter[1]" collapse="true" :style="calcStyle(1,'S')">
+                <PlayerCard id="card1" :player="starter[1]" collapse="true" :style="calcStyle(1,'S')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(1)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-4">
                 <h3>OPP</h3>
-                <PlayerCard :player="starter[2]" collapse="true" :style="calcStyle(2,'OPP')">
+                <PlayerCard id="card2" :player="starter[2]" collapse="true" :style="calcStyle(2,'OPP')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(2)">Bench</button>
                 </PlayerCard>
               </div>
@@ -96,13 +96,13 @@ export default {
             <div class="row">
               <div class="col-md-6">
                 <h3>MB</h3>
-                <PlayerCard :player="starter[3]" collapse="true" :style="calcStyle(3,'MB')">
+                <PlayerCard id="card3" :player="starter[3]" collapse="true" :style="calcStyle(3,'MB')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(3)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-6">
                 <h3>MB</h3>
-                <PlayerCard :player="starter[4]" collapse="true" :style="calcStyle(4,'MB')">
+                <PlayerCard id="card4" :player="starter[4]" collapse="true" :style="calcStyle(4,'MB')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(4)">Bench</button>
                 </PlayerCard>
               </div>
@@ -110,13 +110,13 @@ export default {
             <div class="row">
               <div class="col-md-6">
                 <h3>OH</h3>
-                <PlayerCard :player="starter[5]" collapse="true" :style="calcStyle(5,'OH')">
+                <PlayerCard id="card5" :player="starter[5]" collapse="true" :style="calcStyle(5,'OH')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(5)">Bench</button>
                 </PlayerCard>
               </div>
               <div class="col-md-6">
                 <h3>OH</h3>
-                <PlayerCard :player="starter[6]" collapse="true" :style="calcStyle(6,'OH')">
+                <PlayerCard id="card6" :player="starter[6]" collapse="true" :style="calcStyle(6,'OH')">
                   <button class="btn btn-warning  me-2" @click="sendToBench(6)">Bench</button>
                 </PlayerCard>
               </div>
@@ -193,6 +193,7 @@ export default {
       window.secret_list_sendBack(this.players[index])
       this.players.push(this.players[index]) 
       this.players[index] = null
+      document.getElementById("card"+index).collapse = true
       this.actionSuccess = false;
       setTimeout(() => {
         this.actionSuccess = true;
