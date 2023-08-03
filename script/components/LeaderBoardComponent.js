@@ -70,7 +70,7 @@ export default {
           weeklyPoints: [15, 25, 30, 20, 40, 30, 35]
         },
         {
-          name: 'A why not?',
+          name: 'The Big A',
           id: 2,
           favoriteTeam: 'unknown',
           weeklyPoints: [10, 20, 15, 25, 30, 40, 50]
