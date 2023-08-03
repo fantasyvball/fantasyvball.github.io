@@ -1,6 +1,9 @@
 export default {
   template:`
     <div class="container">
+      <div class="alert alert-info mt-3 position-relative" role="alert">
+        🚧 🚧 🚧 This page is currently under construction! We appreciate your understanding and would love to hear your feedback as we continue to develop and improve it! 👷👷👷
+      </div>
       <h1>Leaderboard</h1>
   
       <div class="btn-group mb-3" role="group">
@@ -55,7 +58,7 @@ export default {
       
       players: [
         {
-          name: 'All Audrey ;)',
+          name: 'Audrey spiderman meme',
           id: 0,
           favoriteTeam: 'UC Irvine',
           weeklyPoints: [30, 40, 20, 50, 45, 35, 60]
