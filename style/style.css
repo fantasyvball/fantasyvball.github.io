@@ -149,6 +149,16 @@ footer {
   
 }
 
+.tooltip {
+  position: absolute;
+  border-radius: 5px;
+  background: #ccc;
+  opacity: 0.8 !important;
+}
+
+
+
+
 .player-image {
   opacity: 0.3; /* Set the desired opacity value (0.0 to 1.0) */
   max-width: 100%;
@@ -186,4 +196,22 @@ footer {
 
 .dark-theme .unknow-border {
   border-left: 5px solid #ffffff !important;
+}
+
+
+.prof-link /* Apply styles to router-link */
+{
+  color: #000000; /* Set the text color */
+  text-decoration: none; /* Remove default underline for router-link */
+  display: inline-block; /* Adjust display property for router-link to inline-block */
+}
+
+.dark-theme .prof-link /* Apply styles to router-link */
+{
+  color: #ffffff; /* Set the text color */
+}
+
+/* Add styles for when the router-link is being hovered */
+.prof-link:hover {
+  color: #007bff; /* Change the color on hover */
 }
