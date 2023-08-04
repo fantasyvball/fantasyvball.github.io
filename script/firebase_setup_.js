@@ -1,15 +1,11 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+import { initializeApp } from "./firebase/firebase-app.js";
 
-import { getDatabase, ref, set, child, get  } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-database.js"
+import { getDatabase, ref, set, child, get  } from "./firebase/db.js"
 
-import { initializeAppCheck, ReCaptchaV3Provider } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app-check.js";
+import { initializeAppCheck, ReCaptchaV3Provider } from "./firebase/appcheck.js";
 
-import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
-
-import { getAuth, RecaptchaVerifier, signInWithPhoneNumber, updateProfile } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"
-
-import { isSignInWithEmailLink, sendSignInLinkToEmail, signInWithEmailLink } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"
+import { getAuth, RecaptchaVerifier, signInWithPhoneNumber, updateProfile, isSignInWithEmailLink, sendSignInLinkToEmail, signInWithEmailLink } from "./firebase/auth.js"
 
 import my_super_list from "./player.js"
 
@@ -380,6 +376,7 @@ function getPlayerById(id) {
   })
   return result || {}
 }
+
 
 
 
