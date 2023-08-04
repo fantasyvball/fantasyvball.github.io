@@ -72,7 +72,7 @@ export default {
         </div>
         <div v-else>
           <div>
-            <h1>Roster</h1>
+            <h1>Roster <router-link class="prof-link" v-if="hasFireUser()" :to="userLink()">#{{hasFireUser().uid}}</router-link></h1>
             <div class="row">
               <div class="col-md-4">
                 <h3>L</h3>
@@ -263,5 +263,11 @@ export default {
       });
       
     },
+    hasFireUser(){
+      return window.hasFireUser()
+    },
+    userLink(){
+      return '/user/'+(window.hasFireUser().uid)
+    }
   },
 };
