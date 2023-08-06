@@ -96,7 +96,7 @@ function handleEmailAuth(email) {
   return new Promise((resolve, reject) => {
     sendSignInLinkToEmail(auth, email, {
       // this is the URL that we will redirect back to after clicking on the link in mailbox
-      url: 'https://untimelyslushyregister.volleyvisual.repl.co#?test=true',
+      url: 'https://fantasyvball.github.io#?test=true',
       handleCodeInApp: true,
     }).then(() => {
       resolve("true")
