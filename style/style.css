@@ -1,3 +1,6 @@
+body{
+  background: #fafafa;
+}
 /* Styling for navigation bar */
 .navbar {
   background-color: #d1d1d1 !important;
@@ -199,6 +202,7 @@ footer {
 }
 
 
+
 .prof-link /* Apply styles to router-link */
 {
   color: #000000; /* Set the text color */
@@ -214,4 +218,65 @@ footer {
 /* Add styles for when the router-link is being hovered */
 .prof-link:hover {
   color: #007bff; /* Change the color on hover */
+}
+
+.gridjs-wrapper{
+  overflow-x: hidden;
+}
+
+.nav-tabs .nav-link {
+  background-color: #999999; /* Background color for non-active tabs */
+}
+
+.nav-tabs {
+   overflow-x: auto;
+   overflow-y:hidden;
+   flex-wrap: nowrap;
+}
+
+.tabbable .nav-tabs .nav-link {
+  white-space: nowrap;
+}
+
+tr:hover td {
+	background: #d1d1d1;
+}
+
+.modal-content{
+  background-color: #eeeeee;
+  border-radius: 0.5rem;  
+}
+
+.dark-theme .modal-content{
+  background-color: #333;
+  color: #fff;
+  border-radius: 0.5rem;  
+}
+
+.dataframe table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.dataframe th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.dataframe th {
+  background-color: #009cde;
+  color:#ffffff;
+  font-weight: bold;
+}
+
+.dataframe td{
+  background-color: #bbebff;
+  color: #000000;  
+}
+
+
+.dataframe img{
+    height: 40px;
 }
