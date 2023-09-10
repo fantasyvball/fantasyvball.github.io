@@ -262,18 +262,20 @@ tr:hover td {
 .dataframe th, td {
   border: 1px solid #ccc;
   padding: 8px;
-  text-align: center;
 }
+
 
 .dataframe th {
   background-color: #009cde;
   color:#ffffff;
   font-weight: bold;
+  text-align: center;
 }
 
 .dataframe td{
   background-color: #bbebff;
   color: #000000;  
+  text-align: left;
 }
 
 
