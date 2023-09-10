@@ -92,7 +92,7 @@ export default{
         }, false);
       }
       
-    },500);
+    },1000);
 
   }
 }
