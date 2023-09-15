@@ -22,7 +22,7 @@ export default{
               <router-link class="nav-link" to="/top-players">Top Players</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/leaderboard">Leaderboard</router-link>
+              <router-link class="nav-link" to="/rpi">RPI</router-link>
             </li>
             <li v-if="isLoggedIn" class="nav-item">
               <router-link class="nav-link" to="/achievement">Achievement</router-link>
