@@ -1,6 +1,6 @@
 export default{
     template:`
-      <span>most updated NCAA RPI RANKING YOU WILL EVER FIND. LAST UPDATE 9/11/2023</span>
+      <span>most updated NCAA RPI RANKING YOU WILL EVER FIND. LAST UPDATE 9/17/2023 11:04 EST</span>
       
       
       <div class="col-md-3">
