@@ -26,7 +26,7 @@ export default{
         </div>
       </div>
     
-      <span>most updated NCAA RPI RANKING YOU WILL EVER FIND. LAST UPDATE OCT 9 2023 11:13EST</span>
+      <span>most updated NCAA RPI RANKING YOU WILL EVER FIND. LAST UPDATE OCT 16 2023 14:00EST</span>
       
       
       <div class="col-md-3">
