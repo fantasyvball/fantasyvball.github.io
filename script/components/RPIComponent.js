@@ -27,6 +27,7 @@ export default{
       </div>
     
       <span>most updated NCAA RPI RANKING YOU WILL EVER FIND. LAST UPDATE OCT 23 2023 14:00EST</span>
+      <br>
       <span>*note: sw = set won; sl = set lost; sr= set ratio = set won÷set lost</span>
       
       
