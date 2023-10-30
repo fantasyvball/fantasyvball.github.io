@@ -26,7 +26,7 @@ export default{
         </div>
       </div>
     
-      <span>most updated NCAA RPI RANKING YOU WILL EVER FIND. LAST UPDATE OCT 23 2023 14:00EST</span>
+      <span>most updated NCAA RPI RANKING YOU WILL EVER FIND. LAST UPDATE OCT 30 2023 14:00EST</span>
       <br>
       <span>*note: sw = set won; sl = set lost; sr= set ratio = set won÷set lost</span>
       
@@ -122,7 +122,7 @@ export default{
       });
     })
 
-    const weeklabel = ["w1","w2","w3","w4","w5","w6","w7","w8","w9"]
+    const weeklabel = ["w1","w2","w3","w4","w5","w6","w7","w8","w9","w10"]
 
 
     
