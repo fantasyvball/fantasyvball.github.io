@@ -26,7 +26,7 @@ export default{
         </div>
       </div>
     
-      <span>most updated NCAA RPI RANKING YOU WILL EVER FIND. LAST UPDATE NOV 6 2023 14:10EST</span>
+      <span>most updated NCAA RPI RANKING YOU WILL EVER FIND. LAST UPDATE NOV 13 2023 15:40EST</span>
       <br>
       <span>*note: sw = set won; sl = set lost; sr= set ratio = set won÷set lost</span>
       
