@@ -13,6 +13,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Restore pip cache
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
     - name: Set up Python and cache pip dependencies
       uses: actions/setup-python@v2
       with:
@@ -20,8 +28,10 @@ jobs:
         cache: 'pip' # caching pip dependencies
 
     - name: Install dependencies
-      run: pip install -r requirements.txt
-    - name: Update json
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run update script
       run: python3 ./test/updateJson.py
     - name: Commit Changes
       run: |
