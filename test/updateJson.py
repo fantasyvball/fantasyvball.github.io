@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta, timezone
+import json
 import re
 import requests
 from fake_useragent import UserAgent
@@ -7,9 +8,9 @@ import parser
 UA = UserAgent()
 
 
-def extract_source(url):
+def extract_source(url, timeout=(5,10)):
     headers = {"User-Agent": str(UA.random)}
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=timeout)
     response.raise_for_status()  # Raise an exception for 4xx or 5xx status codes
     return response.text
 
@@ -35,11 +36,12 @@ def get_game_ids(source):
     )
 
 
-def extract_players(source):
-    mytables = source.split('class="mytable"')
+def extract_players(source, card_id):
+    cards = source.split('class="card-body"')
+    print(len(cards))
     players = {
-        " ".join(reversed(player.split(", "))): id
-        for id, player in re.findall(r'stats_player_seq=(.*)">(.*)</a>', mytables[-1])
+        id: player
+        for id, player in re.findall(r'stats_player_seq=(\d+)">([^<]+)</a>', cards[card_id])
     }
     return players
 
@@ -51,50 +53,72 @@ def scrape(game_id, team1_id_pair, team2_id_pair):
     print("Processing", team1, "vs", team2, "(", game_id, ")")
 
     # Extract players for team 1
-    source = extract_source(f"https://stats.ncaa.org/contests/{game_id}/box_score")
-    play_by_play_id = re.findall(r'href="/game/play_by_play/(.*)"', source)[0]
-    team1_players = extract_players(source)
+    source = extract_source(f"https://stats.ncaa.org/contests/{game_id}/individual_stats")
+    print(source)
+    team1_players = extract_players(source, 0)
     team1_players["Team"] = team1_id
 
     # Extract players for team 2
-    source = extract_source(f"https://stats.ncaa.org/contests/{game_id}/box_score")
-    team2_players = extract_players(source)
+    team2_players = extract_players(source, 1)
     team2_players["Team"] = team2_id
-
+    print(team1_players)
+    print(team2_players)
     # Fetch play-by-play data
-    source = extract_source(
-        f"https://stats.ncaa.org/game/play_by_play/{play_by_play_id}"
-    )
+    source = extract_source(f"https://stats.ncaa.org/contests/{game_id}/play_by_play")
     game_data = parser.parse(source, int(game_id), team1_players, team2_players)
 
+    print(game_data)
     return game_data
 
 
 def main():
     SEASON_ID = "18200"
+
+    with open("log.json", encoding="utf8") as f:
+        logs = json.load(f)
+    error_log = {}
+
     input("THE SCRAPPER IS READY. PRESS ENTER TO CONTINUE.")
 
-    date = get_yesterday_date()
-    print(date)
-    # overriding date for testing purpose. delete following line on production.
-    date = "08%2F25%2F2023"
-    print(date)
-    url = build_url(SEASON_ID, date)
-    print(url)
-    source = extract_source(url)
-    team_id_pairs = get_team_id_pairs(source)
-    game_ids = get_game_ids(source)
+    try:
+        date = get_yesterday_date()
+        print(date)
+        # overriding date for testing purpose. delete following line on production.
+        # date = "08%2F25%2F2023"
+        print(date)
+        url = build_url(SEASON_ID, date)
+        print(url)
+        source = extract_source(url)
+        team_id_pairs = get_team_id_pairs(source)
+        game_ids = get_game_ids(source)
+
+        print(game_ids)
+        print(team_id_pairs)
+    except Exception as e:
+        error_log["exception"] = str(e)
+        error_log["note"] = "Major Error: Fail on start"
+        with open("log.json", "w", encoding="utf8") as f:
+            logs.append(error_log)
+            json.dump(logs, f)
+        raise e
 
     print(game_ids)
-    print(team_id_pairs)
 
-    input("PAUSED. CONTINUE?")
     for game_id in game_ids:
-        scrape(game_ids, team_id_pairs.pop(0), team_id_pairs.pop(0))
+        try:
+            scrape(game_ids, team_id_pairs.pop(0), team_id_pairs.pop(0))
+        except Exception as e:
+            raise e
+            error_log["exception"] = str(e)
+            error_log["note"] = "Minor Error: Game Skipped"
+            if "skip" in error_log:
+                error_log["skip"].append(game_id)
+            else:
+                error_log["skip"] = [game_id]
         break
-
-    with open("scraper.log", "a+") as f:
-        print(scraped_data, file=f)
+    with open("log.json", "w", encoding="utf8") as f:
+        logs.append(error_log)
+        json.dump(logs, f)
 
 
 if __name__ == "__main__":
