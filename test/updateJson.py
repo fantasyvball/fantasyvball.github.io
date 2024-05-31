@@ -54,12 +54,12 @@ def scrape(game_id, team1_id_pair, team2_id_pair):
 
     # Extract players for team 1
     source = extract_source(f"https://stats.ncaa.org/contests/{game_id}/individual_stats")
-    print(source)
-    team1_players = extract_players(source, 0)
+
+    team1_players = extract_players(source, 1)
     team1_players["Team"] = team1_id
 
     # Extract players for team 2
-    team2_players = extract_players(source, 1)
+    team2_players = extract_players(source, 2)
     team2_players["Team"] = team2_id
     print(team1_players)
     print(team2_players)
@@ -106,7 +106,7 @@ def main():
 
     for game_id in game_ids:
         try:
-            scrape(game_ids, team_id_pairs.pop(0), team_id_pairs.pop(0))
+            scrape(game_id, team_id_pairs.pop(0), team_id_pairs.pop(0))
         except Exception as e:
             raise e
             error_log["exception"] = str(e)
